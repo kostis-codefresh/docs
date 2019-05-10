@@ -1,4 +1,5 @@
-{{ define "main" }}
+---
+---
 
 <div class="card-table" style="margin-top: 24px">
     <a href="https://www.pulumi.com"><img src="/images/logo/logo.svg" alt="Pulumi" width="300"></a>
@@ -162,8 +163,6 @@
     </div>
 </div>
 
-<p>For questions or feedback, reach us in our
-<a href="https://slack.pulumi.io">community Slack channel</a>,
-on <a href="https://github.com/pulumi">GitHub</a>, or by emailing <a href="mailto:support@pulumi.com">support@pulumi.com</a>.</p>
-
-{{ end }}
+For questions or feedback, reach us in our
+[community Slack channel](https://slack.pulumi.io),
+on [GitHub](https://github.com/pulumi), or by emailing [support@pulumi.com](mailto:support@pulumi.com).
