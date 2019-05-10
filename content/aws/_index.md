@@ -18,16 +18,19 @@ og:
 Pulumi helps you get your code to the AWS cloud faster than ever before: from high-level multi-cloud libraries, to low-level fine grained control of AWS-specific resources. 
 
 <div class="row">
-<div class="col-md-9" markdown="1">
+<div class="col-md-9">
 
+{{% md %}}
 ## Pulumi and AWS
 
 <img class="how-to-logo" src="/images/brand/aws-technology-partner.png" alt="{{ page.brand }} advanced technology partner" width="225">
 
 Pulumi is an AWS Advanced Technology Partner providing everything you need to get code to the AWS cloud. Pulumi provides a cloud development platform enabling Development and DevOps teams to code, deploy, any cloud app: from serverless functions, to container apps, to data services and infrastructure.
+{{% /md %}}
 
 </div>
-<div class="col-md-3 find-out-more" markdown="1">
+<div class="col-md-3 find-out-more">
+{{% md %}}
 
 ### Find out more
 
@@ -36,6 +39,7 @@ Pulumi is an AWS Advanced Technology Partner providing everything you need to ge
 * [GitHub @pulumi/aws]
 * [Configure AWS]
 
+{{% /md %}}
 </div>
 </div>
 
@@ -46,27 +50,33 @@ Pulumi supports all AWS services available for deployment. The `{{ page.library 
 Example services include:
 
 <div class="row">
-<div class="col-md-4" markdown="1">
+<div class="col-md-4">
+{{% md %}}
 
 * [Amazon Athena](/aws/athena.html)
 * [Amazon Cloudwatch](/aws/cloudwatch.html)
 * [Amazon DynamoDB](/aws/dynamodb.html)
 
+{{% /md %}}
 </div>
-<div class="col-md-4" markdown="1">
+<div class="col-md-4">
+{{% md %}}
 
 * [Amazon EC2](/aws/ec2.html)
 * [Amazon ECR](/aws/ecr.html)
 * [Amazon IAM](/aws/iam.html)
 * [Amazon Kinesis](/aws/kinesis.html)
 
+{{% /md %}}
 </div>
-<div class="col-md-4" markdown="1">
+<div class="col-md-4">
+{{% md %}}
 
 * [Amazon S3](/aws/s3.html)
 * [Amazon SNS](/aws/sns.html)
 * [Amazon SQS](/aws/sqs.html)
 
+{{% /md %}}
 </div>
 </div>
 

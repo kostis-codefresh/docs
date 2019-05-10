@@ -2,4 +2,4 @@ baseURL = "https://pulumi.io/"
 languageCode = "en-us"
 title = "Pulumi"
 
-uglyURLs=true
+uglyURLs=false
