@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <p>
+        This reference shows how to use Pulumi to define an AWS {{ .Params.service }}
+        resource using pure code which can then be deployed to AWS and managed as
+        infrastructure as code.
+    </p>
+
+    <div class="row">
+        <div class="col-md-9">
+            <h2>What is AWS {{ .Params.service }}?</h2>
+
+            <img class="how-to-logo" src="/images/brand/aws.png" alt="AWS" width="100">
+
+            <p>AWS {{ .Params.service }} {{ .Params.description }}. Find out more at <a href="{{ .Params.aws_here }}">AWS here</a>.</p>
+        </div>
+        <div class="col-md-3 find-out-more">
+            {{ partial "aws/find-out-more.html" . }}
+        </div>
+    </div>
+
+    {{ .Content }}
+{{ end }}
