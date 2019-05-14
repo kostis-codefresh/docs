@@ -16,7 +16,7 @@ concepts to explore additional containers, serverless, and infrastructure tutori
 - **Manage** our stack in the Pulumi dashboard
 - Tear it down
 
-{% include aws-js-prereqs.md %}
+{{< aws-js-prereqs >}}
 
 ## Initialize the project
 

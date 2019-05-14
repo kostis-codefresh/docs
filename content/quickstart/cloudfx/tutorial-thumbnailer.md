@@ -13,7 +13,7 @@ and a video walkthrough of this example is [available on YouTube](https://www.yo
 
 ![Video thumbnail diagram](/images/quickstart/video-thumbnail-diagram.png){:width="600px"}
 
-{% include aws-js-prereqs.md %}
+{{< aws-js-prereqs >}}
 
 ## Create and deploy the project
 
