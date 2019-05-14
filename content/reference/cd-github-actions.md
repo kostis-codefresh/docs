@@ -1,6 +1,7 @@
 ---
 title: "Pulumi GitHub Actions"
-redirect_from: /github
+aliases:
+    - /github/
 ---
 
 <style>
