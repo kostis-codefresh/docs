@@ -36,187 +36,187 @@ redirect_from: /install/changelog.html
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#01710-released-may-2-2019">0.17.10</a></th>
             <td>2019/05/02</td>
-            <td>{% include sdk-links.html version='0.17.10' %}</td>
+            <td>{{< sdk-links version="0.17.10" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#0179-released-april-30-2019">0.17.9</a></th>
             <td>2019/04/30</td>
-            <td>{% include sdk-links.html version='0.17.9' %}</td>
+            <td>{{< sdk-links version="0.17.9" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#0178-released-april-23-2019">0.17.8</a></th>
             <td>2019/04/23</td>
-            <td>{% include sdk-links.html version='0.17.8' %}</td>
+            <td>{{< sdk-links version="0.17.8" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#0175-released-april-8-2019">0.17.5</a></th>
             <td>2019/04/08</td>
-            <td>{% include sdk-links.html version='0.17.5' %}</td>
+            <td>{{< sdk-links version="0.17.5" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#0174-released-march-26-2019">0.17.4</a></th>
             <td>2019/03/26</td>
-            <td>{% include sdk-links.html version='0.17.4' %}</td>
+            <td>{{< sdk-links version="0.17.4" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#0173-released-march-26-2019">0.17.3</a></th>
             <td>2019/03/26</td>
-            <td>{% include sdk-links.html version='0.17.3' %}</td>
+            <td>{{< sdk-links version="0.17.3" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#0172-released-march-15-2019">0.17.2</a></th>
             <td>2019/03/15</td>
-            <td>{% include sdk-links.html version='0.17.2' %}</td>
+            <td>{{< sdk-links version="0.17.2" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#0171-released-march-6-2019">0.17.1</a></th>
             <td>2019/03/06</td>
-            <td>{% include sdk-links.html version='0.17.1' %}</td>
+            <td>{{< sdk-links version="0.17.1" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#0170-released-march-5-2019">0.17.0</a></th>
             <td>2019/03/05</td>
-            <td>{% include sdk-links.html version='0.17.0' %}</td>
+            <td>{{< sdk-links version="0.17.0" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#01618-released-march-1-2019">0.16.18</a></th>
             <td>2019/03/01</td>
-            <td>{% include sdk-links.html version='0.16.18' %}</td>
+            <td>{{< sdk-links version="0.16.18" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#01617-released-february-27th-2019">0.16.17</a></th>
             <td>2019/02/27</td>
-            <td>{% include sdk-links.html version='0.16.17' %}</td>
+            <td>{{< sdk-links version="0.16.17" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#01616-released-february-24th-2019">0.16.16</a></th>
             <td>2019/02/24</td>
-            <td>{% include sdk-links.html version='0.16.16' %}</td>
+            <td>{{< sdk-links version="0.16.16" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#01615-released-february-22nd-2019">0.16.15</a></th>
             <td>2019/02/22</td>
-            <td>{% include sdk-links.html version='0.16.15' %}</td>
+            <td>{{< sdk-links version="0.16.15" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/v0.16.14/CHANGELOG.md#01614-released-january-31th-2019">0.16.14</a></th>
             <td>2019/01/31</td>
-            <td>{% include sdk-links.html version='0.16.14' %}</td>
+            <td>{{< sdk-links version="0.16.14" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/v0.16.13/CHANGELOG.md#01613-released-january-31th-2019">0.16.13</a></th>
             <td>2019/01/31</td>
-            <td>{% include sdk-links.html version='0.16.13' %}</td>
+            <td>{{< sdk-links version="0.16.13" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/v0.16.12/CHANGELOG.md#01612-released-january-25th-2019">0.16.12</a></th>
             <td>2019/01/25</td>
-            <td>{% include sdk-links.html version='0.16.12' %}</td>
+            <td>{{< sdk-links version="0.16.12" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/v0.16.11/CHANGELOG.md#01611-released-january-16th-2019">0.16.11</a></th>
             <td>2019/01/16</td>
-            <td>{% include sdk-links.html version='0.16.11' %}</td>
+            <td>{{< sdk-links version="0.16.11" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/v0.16.10/CHANGELOG.md#01610-released-january-11th-2019">0.16.10</a></th>
             <td>2019/01/11</td>
-            <td>{% include sdk-links.html version='0.16.10' %}</td>
+            <td>{{< sdk-links version="0.16.10" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/master/CHANGELOG.md#0169-released-december-24th-2018">0.16.9</a></th>
             <td>2018/12/24</td>
-            <td>{% include sdk-links.html version='0.16.9' %}</td>
+            <td>{{< sdk-links version="0.16.9" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/v0.16.8/CHANGELOG.md#0168-released-december-14th-2018">0.16.8</a></th>
             <td>2018/12/14</td>
-            <td>{% include sdk-links.html version='0.16.8' %}</td>
+            <td>{{< sdk-links version="0.16.8" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/v0.16.7/CHANGELOG.md#0167-released-december-5th-2018">0.16.7</a></th>
-            <td>2018/12/5</td>
-            <td>{% include sdk-links.html version='0.16.7' %}</td>
+            <td>2018/12/05</td>
+            <td>{{< sdk-links version="0.16.7" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/v0.16.6/CHANGELOG.md#0166-released-november-28th-2018">0.16.6</a></th>
             <td>2018/11/28</td>
-            <td>{% include sdk-links.html version='0.16.6' %}</td>
+            <td>{{< sdk-links version="0.16.6" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="https://github.com/pulumi/pulumi/blob/v0.16.5/CHANGELOG.md#0165-released-november-16th-2018">0.16.5</a></th>
             <td>2018/11/16</td>
-            <td>{% include sdk-links.html version='0.16.5' %}</td>
+            <td>{{< sdk-links version="0.16.5" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v164">0.16.4</a></th>
             <td>2018/11/14</td>
-            <td>{% include sdk-links.html version='0.16.4' %}</td>
+            <td>{{< sdk-links version="0.16.4" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v163">0.16.3</a></th>
             <td>2018/10/29</td>
-            <td>{% include sdk-links.html version='0.16.3' %}</td>
+            <td>{{< sdk-links version="0.16.3" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v162">0.16.2</a></th>
             <td>2018/10/29</td>
-            <td>{% include sdk-links.html version='0.16.2' %}</td>
+            <td>{{< sdk-links version="0.16.2" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v161">0.16.1</a></th>
             <td>2018/10/23</td>
-            <td>{% include sdk-links.html version='0.16.1' %}</td>
+            <td>{{< sdk-links version="0.16.1" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v160">0.16.0</a></th>
             <td>2018/10/15</td>
-            <td>{% include sdk-links.html version='0.16.0' %}</td>
+            <td>{{< sdk-links version="0.16.0" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v154">0.15.4</a></th>
             <td>2018/09/28</td>
-            <td>{% include sdk-links.html version='0.15.3' %}</td>
+            <td>{{< sdk-links version="0.15.3" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v153">0.15.3</a></th>
             <td>2018/09/18</td>
-            <td>{% include sdk-links.html version='0.15.3' %}</td>
+            <td>{{< sdk-links version="0.15.3" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v152">0.15.2</a></th>
             <td>2018/09/11</td>
-            <td>{% include sdk-links.html version='0.15.2' %}</td>
+            <td>{{< sdk-links version="0.15.2" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v150">0.15.0</a></th>
             <td>2018/08/13</td>
-            <td>{% include sdk-links.html version='0.15.0' %}</td>
+            <td>{{< sdk-links version="0.15.0" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v143">0.14.3</a></th>
             <td>2018/07/20</td>
-            <td>{% include sdk-links.html version='0.14.3' %}</td>
+            <td>{{< sdk-links version="0.14.3" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v142">0.14.2</a></th>
             <td>2018/07/03</td>
-            <td>{% include sdk-links.html version='0.14.2' %}</td>
+            <td>{{< sdk-links version="0.14.2" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v141">0.14.1</a></th>
             <td>2018/06/29</td>
-            <td>{% include sdk-links.html version='0.14.1' %}</td>
+            <td>{{< sdk-links version="0.14.1" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v140">0.14.0</a></th>
             <td>2018/06/15</td>
-            <td>{% include sdk-links.html version='0.14.0' %}</td>
+            <td>{{< sdk-links version="0.14.0" >}}</td>
         </tr>
         <tr>
             <th scope="row"><a href="#v122">0.12.2</a></th>
             <td>2018/05/19</td>
-            <td>{% include sdk-links.html version='0.12.2' %}</td>
+            <td>{{< sdk-links version="0.12.2" >}}</td>
         </tr>
     </tbody>
 </table>
