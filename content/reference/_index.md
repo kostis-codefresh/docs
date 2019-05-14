@@ -4,7 +4,7 @@ title: Documentation
 
 This section provides all published technical documentation for the Pulumi platform.
 
-{% include mini-toc.html %}
+{{< mini-toc >}}
 
 If you are just getting started, please refer to the [Get Started](../quickstart) section,
 which features installation instructions and hands-on tutorials for many cloud providers. Otherwise,

@@ -2,7 +2,7 @@
 title: "Programming Model"
 ---
 
-{% include mini-toc.html %}
+{{< mini-toc >}}
 
 ## Overview {#overview}
 

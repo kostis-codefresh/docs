@@ -2,7 +2,7 @@
 title: API Reference
 ---
 
-{% include mini-toc.html %}
+{{< mini-toc >}}
 
 Pulumi offers APIs for working with a wide variety of cloud platforms, as well
 as higher-level APIs that make it easier to deliver cloud applications and

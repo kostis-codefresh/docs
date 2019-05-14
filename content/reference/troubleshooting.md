@@ -2,7 +2,7 @@
 title: Troubleshooting & Support
 ---
 
-{% include mini-toc.html %}
+{{< mini-toc >}}
 
 Pulumi tries very hard to ensure that your infrastructure is always in a known and predictable state.
 However, sometimes things go wrong. If you can't update your stack, or there's some other problem that is
