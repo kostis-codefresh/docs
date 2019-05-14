@@ -10,7 +10,7 @@ simply defines minimal metadata about your program so that Pulumi knows what to 
 
 Use [`pulumi new <template-name>`](/reference/cli/pulumi_new.html) to quickly scaffold a new project from scratch:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 <div class="language-prologue-javascript"></div>
 ```bash

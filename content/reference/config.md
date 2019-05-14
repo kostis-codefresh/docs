@@ -90,7 +90,7 @@ $ pulumi config set --secret secretValue S3cr37 # set a secret value
 
 Use the following code to access these configuration values in your Pulumi program.
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 var pulumi = require("@pulumi/pulumi");

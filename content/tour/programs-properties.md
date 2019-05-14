@@ -6,7 +6,7 @@ Each resource object has two kinds of properties: *inputs* and *outputs*.
 
 At creation time, you supply *input* properties to control the desired state of the resource:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 const bucket = new aws.s3.Bucket("photos", { versioning: { enable: true } });
@@ -33,7 +33,7 @@ they are what the resource provider uses to perform actual creations and updates
 
 The resulting resource object offers *output* properties that communicate its final state:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 bucket.bucketDomainName.apply(function (name) {

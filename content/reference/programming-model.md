@@ -11,7 +11,7 @@ In Pulumi, [resources](#resources) are defined by allocating resource objects in
 Dependencies between resources are expressed in Pulumi by using the [output properties](#outputs) of one resource in the construction of another resource.  For example, this definition of an EC2 instance creates a dependency on a `SecurityGroup`:
 
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let group = new aws.ec2.SecurityGroup(...);
@@ -82,7 +82,7 @@ This package also provides the following helpers:
 
 A resource is created with the following:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let res = new Resource(name, args, options)
@@ -178,7 +178,7 @@ Resource inputs have type [`Input`][pulumi.Input], which accepts either a raw va
 
 To transform an output into a new value, use the [`apply` method](pkg/nodejs/@pulumi/pulumi/#property-apply). For example, use the following to create an HTTPS URL from the DNS name of a virtual machine: 
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let url = virtualmachine.dnsName.apply(dnsName => "https://" + dnsName)
@@ -208,7 +208,7 @@ The `apply` method accepts a callback which will be passed the value of the `Out
 
 It is common to need to only access some property of the value of an `Output` in order to pass in that property to another `Resource`.  For example, when using ACM certificates one might write:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let certCertificate = new aws.acm.Certificate("cert", {
@@ -253,7 +253,7 @@ record = aws.route53.Record("validation",
 
 To make this kind of property and array-element access more simple, an `Output` 'lifts' the properties of the value that is wrapped, allowing you to access them directly off of the `Output` itself.  This allows the above to be more simply written as:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let certCertificate = new aws.acm.Certificate("cert", {
@@ -297,7 +297,7 @@ This helps the clarity of the final code, while not losing any important depende
 
 To combine multiple `Output`s into a transformed value, use [pulumi.all].  This allows a new value to be constructed from several inputs, such as concatenating outputs from two different resources together, or constructing a policy document using information from several other resources.
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let connectionString = pulumi.all([sqlServer.name, database.name])
@@ -326,7 +326,7 @@ connection_string = Output.all(sql_server.name, database.name) \
 
 To turn an `Input` into an `Output`, use [pulumi.output].  This can be useful when you want to transform an input value that could either be a raw value or an `Output`:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 function split(input) {
@@ -359,7 +359,7 @@ def split(input):
 
 It's very common to want to build a string out of the values contained in `Outputs`.  Common uses for this are to either provide a custom [stack output](#stack-outputs), or to provide a dynamically computed string as an [Input](https://pulumi.io/reference/pkg/nodejs/@pulumi/pulumi/#Input) to another Resource.  For example, say you had the following:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 const hostName = // get some Output
@@ -441,7 +441,7 @@ const url2: Output<string> = pulumi.interpolate `http://${hostname}:${port}/`;
 
 A [stack output](stack.html#outputs) is a value exported from a stack. A stack's outputs can be easily retrieved from the Pulumi CLI and is displayed on pulumi.com. To export values from a stack, use the following definition in the top-level of the entry point for your project:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 exports.url = resource.url;
@@ -465,7 +465,7 @@ The right-hand side of a stack export can be a regular JavaScript value, an [Out
 
 Stack exports are JSON serialized, though quotes are removed when exporting just a string value. For example:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 exports.x = "hello" 
@@ -512,7 +512,7 @@ $ pulumi stack output --json
 
 To access configuration values that have been set with `pulumi config set`, use the following:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let config = new pulumi.Config();
@@ -544,7 +544,7 @@ Configuration values are always stored as strings, but can be parsed as richly t
 
 For richer structured data, the [config.getObject] method can be used to parse JSON values.  For example, following `pulumi config set data '{"active": true, "nums": [1,2,3]}'`, a program can read the `data` config into a rich object with:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let config = new pulumi.Config();
@@ -583,7 +583,7 @@ To create a new component, either in a top-level program or in a library, create
 
 Here's a simple component definition:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 class MyResource extends pulumi.ComponentResource {
@@ -619,7 +619,7 @@ A component must register a namespace, such as `pkg:MyResource` in the example a
 
 Components will often contain child resources. To track this relationship, pass the component instance as the parent when constructing a resource:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let bucket = new aws.s3.Bucket(`${name}-bucket`, {}, { parent: this });
@@ -640,7 +640,7 @@ bucket := s3.Bucket(ctx, fmt.Sprintf("%s-bucket", name), &s3.BucketArgs{}, pulum
 Components can define their own properties using [registerOutputs]. The Pulumi engine uses this information to display the logical outputs of the component.  The call to `registerOutputs` also tells Pulumi that the resource is done registering children and should be considered fully constructed, so it is recommended that this method be called in all components even if no outputs need to be registered.
 
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 this.registerOutputs({
@@ -668,7 +668,7 @@ self.register_outputs({
 
 In addition to the usual resource options, components accept a set of [providers](#providers) to use for their child resources. If a component is itself a child of another component, its set of providers is inherited from its parent by default.
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let component = new MyResource("component", { providers: { aws: useast1, kubernetes: myk8s } });
@@ -697,7 +697,7 @@ For more information about components, see the [Pulumi Components](component-tut
 
 A [CustomResource][pulumi.CustomResource] needs an associated resource provider to manage its Create, Read, Update, and Delete (_CRUD_) operations. This is in contrast to a [ComponentResource][pulumi.ComponentResource], whose logic is authored entirely in a Pulumi program's source language (e.g. Javascript or Python). By default, a `CustomResource`'s provider is determined based on its [package](#packages). This default provider is automatically created by Pulumi, and is configured using its package's [config values](#config). For example, the configuration and program below will create a single EC2 instance in the `us-west-2` region.
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let aws = require("@pulumi/aws");
@@ -736,7 +736,7 @@ $ pulumi config set aws:region us-west-2
 
 While this works for the majority of Pulumi programs, some programs may have special requirements (e.g. the ability to deploy into multiple AWS regions simultaneously or to deploy into a Kubernetes cluster created earlier in the program) that require explicitly creating, configuring, and referencing providers. This is typically done by instantiating the relevant package's `Provider` type and passing it in the options for each `CustomResource` or `ComponentResource` that needs to use it. For example, the configuration and program below will create an ACM certificate in the `us-east-1` region and a load balancer listener in the `us-west-2` region.
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let pulumi = require("@pulumi/pulumi");
@@ -830,7 +830,7 @@ $ pulumi config set aws:region us-west-2
 
 Component resources also accept a set of providers to use with their child resources. For example, the EC2 instance parented to `myResource` in the program below will be created in `us-east-1`, and the Kubernetes pod parented to `myResource` will be created in the cluster targeted by the "test-ci" context.
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 class MyResource extends pulumi.ComponentResource {
@@ -892,7 +892,7 @@ You should consider implementing a dynamic provider in a few cases:
 
 Dynamic Providers are defined by first implementing the `pulumi.dynamic.ResourceProvider` interface, including the `create`, `read`, `update` and `delete` operations for your resource, as well as `check` and `diff`.  Default implementations are provided for everything except `create`, so a minimal implementation could look like:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 const myprovider = {
@@ -920,7 +920,7 @@ const myprovider: pulumi.dynamic.ResourceProvider = {
 
 This resource provider is then used to create a new kind of custom resource by inheriting from the `pulumi.dynamic.Resource` base class (a subclass of `pulumi.CustomResource`).
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 class MyResource extends pulumi.dynamic.Resource {
@@ -983,7 +983,7 @@ Read is invoked when the Pulumi engine needs to get data about a resource that i
 
 This example highlights using dynamic providers to run some code only when a resource is created, and then to store the results of that in the checkpoint file so that this value is maintained across deployments of the resource.  In this case, there is no "backing cloud provider", just the checkpoint file serialization that persists data.  The result is a provider similar to the one provided in `@pulumi/random` (although that library has many more flags than this simple example):
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let pulumi = require("@pulumi/pulumi");
@@ -1034,7 +1034,7 @@ export class Random extends pulumi.dynamic.Resource {
 This example highlights making REST API calls to some backing provider (in this case the GitHub API) to perform CRUD operations.  Because the resource provider method implementations will be serialized and used in a different process, we keep all the work to initialize the REST client and make calls to it local to each function.  
 
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let pulumi = require("@pulumi/pulumi");
@@ -1128,7 +1128,7 @@ Some Pulumi packages have a dependency on a [Resource Provider plugin](/referenc
 
 You can create libraries and components that allow the caller to pass in JavaScript callbacks to invoke at runtime. For example, you can create an AWS Lambda function (or an Azure Function) by providing a JavaScript callback to be used as its implementation. 
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 let bucket = new aws.s3.Bucket("mybucket");

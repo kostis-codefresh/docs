@@ -14,7 +14,7 @@ Remember, it will prompt us first, and we can explicitly run `pulumi preview` in
 
 For instance, let's say we want to enable public read access to our S3 bucket, with a minor edit:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 const bucket = new aws.s3.Bucket("my-bucket", { acl: "public-read" });

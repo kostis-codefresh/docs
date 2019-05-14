@@ -6,7 +6,7 @@ title: Package @pulumi/vsphere
 <!-- To change it, please see https://github.com/pulumi/docs/tree/master/tools/tscdocgen. -->
 
 
-{% include langchoose.html nodeonly=true %}
+{{< langchoose nodeonly >}}
 
 ```javascript
 var vsphere = require("@pulumi/vsphere");

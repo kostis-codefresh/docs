@@ -106,7 +106,7 @@ Payloads also contain several headers.
 The following snippets show how to compute and verify the webhook signature.
 For examples in other languages, see [danharper/hmac-examples](https://github.com/danharper/hmac-examples).
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 var crypto = require('crypto');

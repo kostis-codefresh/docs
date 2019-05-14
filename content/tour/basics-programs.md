@@ -19,7 +19,7 @@ Programs express their desired state by creating [resource objects](./programs-r
 communicates to Pulumi what cloud resources will be required by the program.  Here is a simple example that uses an
 [AWS S3 bucket](https://aws.amazon.com/s3/):
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 var aws = require("@pulumi/aws");

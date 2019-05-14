@@ -14,7 +14,7 @@ and Kubernetes, in addition to our frameworks that aggregate these resources int
 
 These packages are installed as any ordinary package would be:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 <div class="language-prologue-javascript"></div>
 ```bash
@@ -38,7 +38,7 @@ $ go get -u github.com/pulumi/pulumi-aws/sdk/go/aws/...
 
 And are imported as usual in your code:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 var aws = require("@pulumi/aws");

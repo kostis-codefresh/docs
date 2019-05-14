@@ -9,7 +9,7 @@ properties from resources, but they can be anything.
 
 For instance, the following code creates a VM and exports its auto-assigned public IP address:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 var aws = require("@pulumi/aws");

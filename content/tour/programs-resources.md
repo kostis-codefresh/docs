@@ -4,7 +4,7 @@ title: Resources
 
 Cloud resources are just objects you will allocate in your program:
 
-{% include langchoose.html %}
+{{< langchoose >}}
 
 ```javascript
 var aws = require("@pulumi/aws");

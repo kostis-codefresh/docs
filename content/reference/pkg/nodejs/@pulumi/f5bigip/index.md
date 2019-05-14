@@ -6,7 +6,7 @@ title: Package @pulumi/f5bigip
 <!-- To change it, please see https://github.com/pulumi/docs/tree/master/tools/tscdocgen. -->
 
 
-{% include langchoose.html nodeonly=true %}
+{{< langchoose nodeonly >}}
 
 ```javascript
 var f5bigip = require("@pulumi/f5bigip");

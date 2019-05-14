@@ -6,7 +6,7 @@ title: Package @pulumi/openstack
 <!-- To change it, please see https://github.com/pulumi/docs/tree/master/tools/tscdocgen. -->
 
 
-{% include langchoose.html nodeonly=true %}
+{{< langchoose nodeonly >}}
 
 ```javascript
 var openstack = require("@pulumi/openstack");
