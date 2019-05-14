@@ -1,68 +1,25 @@
 <!doctype html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "header.html" . }}
 
-    {{ if isset .Params "redirect_to" }}
-    <meta http-equiv="refresh" content="0; url={{ .Params.redirect_to }}" />
-    {{end}}
+        <main id="main-content">
+            <section class="content-block bg-white">
+                <div class="content-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            {{ block "main" . }}
 
-    <title>{{ .Title }}{{if not .IsHome}} - {{end}}{{ .Site.Title }}</title>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    {{ if isset .Params "meta_title" }}
-    <meta property="og:title" content="{{ .Params.meta_title }}">
-    <meta name="twitter:title" content="{{ .Params.meta_title }}">
-    {{ else if isset .Params "title" }}
-    <meta property="og:title" content="{{ .Params.title }}">
-    <meta name="twitter:title" content="{{ .Params.title }}">
-    {{else}}
-    <meta property="og:title" content="{{ .Site.Title }}">
-    <meta name="twitter:title" content="{{ .Site.Title }}">
-    {{end}}
+        {{ partial "footer.html" . }}
 
-    {{ if isset .Params "meta_desc" }}
-    <meta name="description" content="{{ .Params.meta_desc }}">
-    <meta property="og:description" content="{{ .Params.meta_desc }}">
-    <meta name="twitter:description" content="{{ .Params.meta_desc }}">
-    {{else}}
-    <meta name="description" content="Pulumi provides a cloud development model for serverless functions, container apps, and data infrastructure for any cloud.">
-    <meta property="og:description" content="Pulumi provides a cloud development model for serverless functions, container apps, and data infrastructure for any cloud.">
-    <meta name="twitter:description" content="Pulumi provides a cloud development model for serverless functions, container apps, and data infrastructure for any cloud.">
-    {{end}}
-
-    {{ if isset .Params "meta_image" }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.meta_image }}">
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.meta_image }}">
-    {{else}}
-    <meta property="og:image" content="{{ .Site.BaseURL }}assets/social/pulumi.png">
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}assets/social/pulumi.png">
-    {{end}}
-
-    <meta property="og:locale" content="en-US">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="{{ .Site.Title }}">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@PulumiCorp">
-
-    {{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $style := resources.Get "sass/styles.scss" | resources.ToCSS $options }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-
-
-    <link href="https://blog.pulumi.com/rss.xml" rel="alternate" type="application/rss+xml" title="Pulumi Blog">
-
-
-</head>
-
-<body>
-    <main id="main-content">
-        {{ block "main" . }}
-
-        {{ end }}
-    </main>
-</body>
+        {{ partial "scripts.html" . }}
+    </body>
 </html>
