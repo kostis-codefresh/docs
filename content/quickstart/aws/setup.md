@@ -11,7 +11,7 @@ redirect_from: /install/aws.html
 
 The [Pulumi AWS provider] uses the AWS SDK to manage and provision resources.
 
-{% include aws-resource-note.md %}
+{{< aws-resource-note >}}
 
 There are multiple ways to connect Pulumi to your AWS credentials.  The
 [SDK instructions](https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html) cover this in
