@@ -143,7 +143,7 @@ In this tutorial, we'll use JavaScript to build and deploy a simple container us
 
 ## Clean up
 
-{% include cleanup.md %}
+{{< cleanup >}}
 
 ## Next steps
 

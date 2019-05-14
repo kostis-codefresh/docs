@@ -172,7 +172,7 @@ In this section, we configure the S3 bucket to serve the files to a browser. To 
 
 ## Clean up
 
-{% include cleanup.md %}
+{{< cleanup >}}
 
 ## Summary
 
@@ -181,6 +181,7 @@ In this part, we saw that you can use the `@pulumi/aws` package for fine-grain c
 ## Next steps
 
 The full source of the example is available in the [Pulumi examples repo](https://github.com/pulumi/examples) on GitHub:
+
 - [S3 website][s3-folder]
 - [S3 website as component][s3-folder-component]
 

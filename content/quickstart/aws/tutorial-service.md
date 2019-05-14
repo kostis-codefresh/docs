@@ -145,7 +145,7 @@ In this tutorial, we'll use TypeScript to build and deploy a simple container us
 
 ## Clean up
 
-{% include cleanup.md %}
+{{< cleanup >}}
 
 ## Next steps
 

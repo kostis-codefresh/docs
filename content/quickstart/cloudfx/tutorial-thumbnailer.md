@@ -183,7 +183,7 @@ download: s3://bucket-0c91106/cat.jpg to ./cat.jpg
 
 ## Clean up
 
-{% include cleanup.md %}
+{{< cleanup >}}
 
 ## Next steps
 

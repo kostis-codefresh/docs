@@ -99,7 +99,7 @@ In this tutorial, we'll show how to create a simple REST API that counts the num
 
 ## Clean up
 
-{% include cleanup.md %}
+{{< cleanup >}}
 
 ## Next steps
 
