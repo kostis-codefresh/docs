@@ -177,6 +177,15 @@ var gitHubBaseURLs = map[string]string{
 	"@pulumi/vsphere":    "https://github.com/pulumi/pulumi-vsphere/blob/{githash}/sdk/nodejs",
 }
 
+// aliases is a *hackhackhack* hard-coded list of packages that need an alias to an older URL.
+var aliases = map[string]string{
+	"@pulumi/pulumi":     "packages/pulumi",
+	"@pulumi/aws":        "packages/pulumi-aws",
+	"@pulumi/azure":      "packages/pulumi-azure",
+	"@pulumi/cloud":      "packages/pulumi-cloud",
+	"@pulumi/kubernetes": "packages/pulumi-kubernetes",
+}
+
 // emitMarkdownDocs takes as input a full Typedoc AST, transforms it into Markdown suitable for our documentation
 // website, and emits those files into the target directory.  If the target doesn't exist, it will be created.
 func emitMarkdownDocs(doc *typeDocNode, outdir string, githash string) error {
@@ -332,7 +341,7 @@ func (e *emitter) emitMarkdownModule(name string, mod *module, root bool) error 
 			}
 
 			breadcrumbs = append(
-				[]string{fmt.Sprintf("<a href=\"%s/index.html\">%s</a> &gt; ", crumbs, name)},
+				[]string{fmt.Sprintf("<a href=\"%s/\">%s</a> &gt; ", crumbs, name)},
 				breadcrumbs...)
 			if crumbs != "" {
 				crumbs += string(filepath.Separator)
@@ -342,7 +351,7 @@ func (e *emitter) emitMarkdownModule(name string, mod *module, root bool) error 
 
 		// Finally, add the link to the root module.
 		breadcrumbs = append(
-			[]string{fmt.Sprintf("<a href=\"%s/index.html\">%s</a> &gt; ", crumbs, e.pkg)},
+			[]string{fmt.Sprintf("<a href=\"%s/\">%s</a> &gt; ", crumbs, e.pkg)},
 			breadcrumbs...)
 	}
 
@@ -392,6 +401,8 @@ func (e *emitter) emitMarkdownModule(name string, mod *module, root bool) error 
 		return modules[i].Name < modules[j].Name
 	})
 
+	alias, hasAlias := aliases[pkg]
+
 	// To generate the code, simply render the source Mustache template, using the right set of arguments.
 	if err = indexTemplate.FRender(f, map[string]interface{}{
 		"Title":       title,
@@ -404,6 +415,8 @@ func (e *emitter) emitMarkdownModule(name string, mod *module, root bool) error 
 		"HasModules":  len(modules) > 0,
 		"Members":     members,
 		"HasMembers":  len(members) > 0,
+		"Alias":       alias,
+		"HasAlias":    hasAlias
 	}); err != nil {
 		return err
 	}
@@ -627,11 +640,11 @@ func (m *module) Merge(other *module) error {
 const rootModule = "index"
 
 func getModuleFilename(m string) string {
-	// Each module gets its own subdirectory and index.md.  The package root gets a bit more metadata at the top.
+	// Each module gets its own subdirectory and _index.md.  The package root gets a bit more metadata at the top.
 	if m == rootModule {
-		return "index.md"
+		return "_index.md"
 	}
-	return filepath.Join(strings.Replace(m, "/", string(filepath.Separator), -1), "index.md")
+	return filepath.Join(strings.Replace(m, "/", string(filepath.Separator), -1), "_index.md")
 }
 
 func getModuleParentName(m string) string {
