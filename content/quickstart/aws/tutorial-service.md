@@ -9,7 +9,7 @@ In this tutorial, we'll use TypeScript to build and deploy a simple container us
 
 ## Prerequisites
 
-1.  [Install Pulumi](../install.html)
+1.  [Install Pulumi](../install)
 1.  Configure [AWS](../aws/setup.html) credentials
 
 ## Serve an HTML file in an NGINX container

@@ -150,7 +150,7 @@ You can find a list of frequently-asked questions [here](./faq.html).
 [azure]: https://pulumi.io/quickstart/azure/index.html
 [gcp]: https://pulumi.io/quickstart/gcp/index.html
 [eks]: https://aws.amazon.com/eks/
-[install]: https://pulumi.io/quickstart/install.html
+[install]: https://pulumi.io/quickstart/install
 [nodejs]: https://nodejs.org/en/
 [npm]: https://www.npmjs.com/get-npm
 [yarn]: https://yarnpkg.com/en/docs/install

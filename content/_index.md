@@ -10,7 +10,7 @@
         Build software for any cloud using your favorite language.
     </h3>
     <p style="text-align: center; margin-bottom: 0">
-        <a href="/quickstart/install.html"><button class="button primary">INSTALL</button></a>
+        <a href="/quickstart/install"><button class="button primary">INSTALL</button></a>
         <a href="/quickstart"><button class="button primary">GET STARTED</button></a>
         <a href="/reference"><button class="button primary">LEARN</button></a>
     </p>

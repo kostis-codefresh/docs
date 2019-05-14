@@ -36,7 +36,7 @@ For your workflow to do anything interesting, you'll want to create a new projec
 
 1. [Clone an Existing Example](https://github.com/pulumi/examples)
 2. [Use the New Project Wizard](https://app.pulumi.com/site/new-project)
-3. [Download the CLI](https://pulumi.io/quickstart/install.html) and run `pulumi new` to select a template
+3. [Download the CLI](https://pulumi.io/quickstart/install) and run `pulumi new` to select a template
 
 # Creating a Workflow
 

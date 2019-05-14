@@ -43,7 +43,7 @@ instructions [here][kubectl].
 
 [pulumi]: https://www.pulumi.com/
 [nodejs]: https://nodejs.org/en/
-[pulumi-cli]: https://pulumi.io/quickstart/install.html
+[pulumi-cli]: https://pulumi.io/quickstart/install
 [local-backend]: https://pulumi.io/reference/state.html
 [ts]: https://www.typescriptlang.org/
 [yarn]: https://yarnpkg.com/en/docs/install

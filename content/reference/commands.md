@@ -13,7 +13,7 @@ This CLI has been designed for great inner loop productivity, in addition to
 
 The Pulumi CLI is free to download and install:
 
-<a href="/quickstart/install.html"><button class="button primary small">INSTALL PULUMI</button></a>
+<a href="/quickstart/install"><button class="button primary small">INSTALL PULUMI</button></a>
 
 ## Common Commands
 

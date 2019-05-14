@@ -16,7 +16,7 @@ the steps outlined in the sample YAML file below to the Visual Designer as well.
 ## Prerequisites
 - An account on https://app.pulumi.com.
 - The latest CLI.
-  - Installation instructions are [here](https://pulumi.io/quickstart/install.html).
+  - Installation instructions are [here](https://pulumi.io/quickstart/install).
 - A git repo with your Azure DevOps project set as the remote URL.
   - To learn more about how to create a git repo in your DevOps project, click [here](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=vsts&tabs=new-nav).
 
@@ -76,7 +76,7 @@ variables. For Azure, the environment variables you will need are documented [he
 ## Agents
 
 Azure DevOps allows you to specify a build agent for each of your jobs in your pipeline. You may have a requirement to run certain jobs on a
-Ubuntu agent, and some on a Windows agent. `pulumi` can be installed on these agents by following the directions from [this](https://pulumi.io/quickstart/install.html) page.
+Ubuntu agent, and some on a Windows agent. `pulumi` can be installed on these agents by following the directions from [this](https://pulumi.io/quickstart/install) page.
 
 ## Setup
 
