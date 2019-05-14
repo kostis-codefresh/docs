@@ -416,7 +416,7 @@ func (e *emitter) emitMarkdownModule(name string, mod *module, root bool) error 
 		"Members":     members,
 		"HasMembers":  len(members) > 0,
 		"Alias":       alias,
-		"HasAlias":    hasAlias
+		"HasAlias":    hasAlias,
 	}); err != nil {
 		return err
 	}
