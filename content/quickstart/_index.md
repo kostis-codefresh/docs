@@ -21,6 +21,6 @@ To get started, first download and install the CLI:
 
 If you've already installed Pulumi, simply choose your cloud provider:
 
-{% include quickstart-clouds.md %}
+{{< quickstart-clouds >}}
 
 <!--TODO: use cases, competition -->

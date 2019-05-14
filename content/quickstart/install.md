@@ -217,7 +217,7 @@ back and ensure your path contains the directory containing the `pulumi` CLI ins
 
 After installation, choose a cloud to get started:
 
-{% include quickstart-clouds.md %}
+{{< quickstart-clouds >}}
 
 {{% /md %}}
 </div>
