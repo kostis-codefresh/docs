@@ -14,7 +14,7 @@ aws_here: "https://aws.amazon.com/cloudwatch/"
 
 ## Create an AWS CloudWatch resource using `@pulumi/aws`
 
-The `@pulumi/aws` library enables fine-grained control over the AWS {{ page.service }} resource meaning it can be coded, deployed, and managed entirely in code.
+The `@pulumi/aws` library enables fine-grained control over the AWS CloudWatch resource meaning it can be coded, deployed, and managed entirely in code.
 
 ```javascript
 const aws = require("@pulumi/aws");
