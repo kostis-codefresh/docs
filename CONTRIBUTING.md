@@ -25,7 +25,7 @@
 
 - **Includes.** To share common content across articles, use an "include" file. Place a file in the [`_includes`](_includes/) folder with the appropriate file extension. To include it in a page, use the syntax `{% include %}`.
 
-- **Front-matter variables.** You can define a front-matter variable in the YAML section at the top of a file. For instance, the installer page defines `installerVersion: "0.10.0"`. You  can then reference the variable in either markdown with the syntax `{{< param installerVersion >}}`.
+- **Front-matter variables.** You can define a front-matter variable in the YAML section at the top of a file. For instance, the installer page defines `installer_version: "0.10.0"`. You  can then reference the variable in either markdown with the syntax `{{< param installer_version >}}`.
 
 - **Anchor tags.** Define anchor tags with the syntax `{#anchor-name}`. Even though [Kramdown can automatically generate header IDs](https://kramdown.gettalong.org/converter/html.html), it is preferable to use an explicit anchor; otherwise, changing a section name will break anchor links.
 

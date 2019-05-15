@@ -1,6 +1,6 @@
 ---
 title: "Download and Install"
-installerVersion: "0.17.12"
+installer_version: "0.17.12"
 aliases:
     - "/install/index.html"
     - "/quickstart/install.html"
@@ -8,7 +8,7 @@ aliases:
 
 <!--
 NOTE: To update this page with a new binary release, do the following:
-- Update `installerVersion` in the YAML front matter above.
+- Update `installer_version` in the YAML front matter above.
 - Update changelog.md with the latest fixes in the release
 -->
 
@@ -155,7 +155,7 @@ Raw binaries are available for all major operating systems if you prefer to inst
 
 macOS Sierra (10.12) or later is required.
 
-1. Download [Pulumi {{< param installerVersion >}} for macOS](https://get.pulumi.com/releases/sdk/pulumi-v{{< param installerVersion >}}-darwin-x64.tar.gz).
+1. Download [Pulumi {{< param installer_version >}} for macOS](https://get.pulumi.com/releases/sdk/pulumi-v{{< param installer_version >}}-darwin-x64.tar.gz).
 
 2. Unzip the tarball and either copy the binaries in the `pulumi` directory on your `$PATH`.
 
@@ -163,7 +163,7 @@ macOS Sierra (10.12) or later is required.
 
 We provide a pre-built binary for Linux.
 
-1. Download [Pulumi {{< param installerVersion >}} for Linux x64](https://get.pulumi.com/releases/sdk/pulumi-v{{< param installerVersion >}}-linux-x64.tar.gz).
+1. Download [Pulumi {{< param installer_version >}} for Linux x64](https://get.pulumi.com/releases/sdk/pulumi-v{{< param installer_version >}}-linux-x64.tar.gz).
 
 2. Unzip the tarball and either copy the binaries in the `pulumi` directory on your `$PATH`.
 
@@ -171,7 +171,7 @@ We provide a pre-built binary for Linux.
 
 Windows 8 and 10 are supported.
 
-1. Download [Pulumi {{< param installerVersion >}} for Windows x64](https://get.pulumi.com/releases/sdk/pulumi-v{{< param installerVersion >}}-windows-x64.zip).
+1. Download [Pulumi {{< param installer_version >}} for Windows x64](https://get.pulumi.com/releases/sdk/pulumi-v{{< param installer_version >}}-windows-x64.zip).
 
 2. Copy the extracted zipfile contents to a folder such as `C:\pulumi`.
 
@@ -182,7 +182,7 @@ Windows 8 and 10 are supported.
 To uninstall Pulumi, delete the `.pulumi` folder in your home directory. If you used the manual installer, you should
 also delete the `pulumi` folder that was created.
 
-The current stable version is **{{< param installerVersion >}}**. For a full history of prior versions, including
+The current stable version is **{{< param installer_version >}}**. For a full history of prior versions, including
 release notes, please visit <a href="/reference/changelog.html">the Change Log</a>.
 
 {{% /md %}}
@@ -207,7 +207,7 @@ After installing, verify everything is in working order by running the `pulumi` 
 
 ```bash
 $ pulumi version
-v{{< param installerVersion >}}
+v{{< param installer_version >}}
 ```
 
 If you get an error that `pulumi` could not be found, it means your path has not been configured correctly. Please go
