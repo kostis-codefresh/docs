@@ -36,7 +36,7 @@ For your workflow to do anything interesting, you'll want to create a new projec
 
 1. [Clone an Existing Example](https://github.com/pulumi/examples)
 2. [Use the New Project Wizard](https://app.pulumi.com/site/new-project)
-3. [Download the CLI](https://pulumi.io/quickstart/install) and run `pulumi new` to select a template
+3. [Download the CLI]({{< relref "/quickstart/install.md" >}}) and run `pulumi new` to select a template
 
 # Creating a Workflow
 
@@ -110,10 +110,10 @@ This enables your GitHub Action to communicate with the Pulumi service.
 
 Next, you'll need to configure your cloud credentials. This is dependent on your cloud of choice; for example
 
-* `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` for [AWS](https://pulumi.io/quickstart/aws/setup.html)
-* `ARM_CLIENT_ID`, `ARM_CLIENT_SECRET`, and `ARM_TENANT_ID` for [Azure](https://pulumi.io/quickstart/azure/setup.html)
-* `GOOGLE_CREDENTIALS` for [GCP](https://pulumi.io/quickstart/gcp/setup.html)
-* `KUBECONFIG` for [Kubernetes](https://pulumi.io/quickstart/kubernetes/setup.html)
+* `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` for [AWS]({{< relref "/quickstart/aws/setup.md" >}})
+* `ARM_CLIENT_ID`, `ARM_CLIENT_SECRET`, and `ARM_TENANT_ID` for [Azure]({{< relref "/quickstart/azure/setup.md" >}})
+* `GOOGLE_CREDENTIALS` for [GCP]({{< relref "/quickstart/gcp/setup.md" >}})
+* `KUBECONFIG` for [Kubernetes]({{< relref "/quickstart/kubernetes/setup.md" >}})
 
 Enter these as secrets, just like you did `PULUMI_ACCESS_TOKEN`, so that your GitHub Action can deploy to your cloud.
 
@@ -132,7 +132,7 @@ Pulumi's Cloud Console with more details:
 
 ![Action Logs](/images/reference/gh-actions-logs.png)
 
-For even better Pull Request integration, make sure to also [install our GitHub App](./cd-github.html)!
+For even better Pull Request integration, make sure to also [install our GitHub App]({{< relref "cd-github.md" >}})!
 
 ![Action Pull Requests](/images/reference/gh-actions-prs.png)
 
@@ -183,7 +183,7 @@ container directly.
 
 ## Pulumi GitHub App
 
-The [Pulumi GitHub App](https://pulumi.io/reference/cd-github.html) is something you install into your GitHub
+The [Pulumi GitHub App]({{< relref "cd-github.md" >}}) is something you install into your GitHub
 organization, that will allow the Pulumi service to leave comments on Pull Requests. (It will not have access
 to your source code.)
 

@@ -4,12 +4,12 @@ redirect_from: /install/changelog.html
 ---
 
 <!-- Common links -->
-[`Output`]: /reference/pkg/nodejs/@pulumi/pulumi/index.html#Output
-[Python documentation]: ./python.html
-[Defining and setting stack settings]: ./config.html#config-stack
-[Configuration]: ./config.html
-[Pulumi npm packages]: ./javascript.html#npm-packages
-[Programming Model]: ./programming-model.html
+[`Output`]: /reference/pkg/nodejs/pulumi/pulumi/#Output
+[Python documentation]: {{< relref "python.md" >}}
+[Defining and setting stack settings]: {{< relref "config.md#config-stack" >}}
+[Configuration]: {{< relref "config.md" >}}
+[Pulumi npm packages]: {{< relref "javascript.md#npm-packages" >}}
+[Programming Model]: {{< relref "programming-model.md" >}}
 <!-- End common links -->
 
 ## Available versions {#all-versions}

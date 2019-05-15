@@ -62,12 +62,12 @@ system will have its results reported back to GitHub.
 Pulumi supports a wide array of CI/CD systems, and the Pulumi GitHub App should pick up your changes
 automatically. For instructions for specific CI services, see one of our existing guides:
 
-* [AWS Code Services](./cd-aws-code-services.html)
-* [Azure DevOps](./cd-azure-devops.html)
-* [CircleCI](./cd-circleci.html)
-* [GitHub Actions](./cd-github-actions.html)
-* [GitLab CI](./cd-gitlab-ci.html)
-* [Travis](./cd-travis.html)
+* [AWS Code Services](../cd-aws-code-services/)
+* [Azure DevOps](../cd-azure-devops/)
+* [CircleCI](../cd-circleci/)
+* [GitHub Actions](../cd-github-actions/)
+* [GitLab CI](../cd-gitlab-ci/)
+* [Travis](../cd-travis/)
 
 If you are using a system we don't support yet, please [file an issue](https://github.com/pulumi/pulumi/issues/new)
 so we can add it.
