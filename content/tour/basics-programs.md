@@ -1,5 +1,9 @@
 ---
 title: Programs
+menu:
+  tour:
+    parent: tour
+    weight: 1
 ---
 
 To get code to the cloud, you write Pulumi programs in your language of choice.

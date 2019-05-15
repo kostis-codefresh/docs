@@ -2,11 +2,43 @@ baseURL = "https://pulumi.io/"
 languageCode = "en-us"
 title = "Pulumi"
 
-sectionPagesMenu = "main"
-
 pygmentsCodefences = true
 pygmentsUseClasses = true
 
 [params]
     repositoryURL = "https://github.com/pulumi/docs"
     repositoryBranch = "master"
+
+[[menu.foo]]
+    name = "Foo1"
+    identifier = "foo1"
+    url = "/foo1"
+
+[[menu.foo]]
+    name = "Foo2"
+    identifier = "foo2"
+    url = "/foo2"
+
+[[menu.bar]]
+    name = "Bar1"
+    identifier = "bar1"
+    url = "/bar1"
+
+[[menu.bar]]
+    name = "Bar2"
+    identifier = "bar2"
+    url = "/bar2"
+
+
+
+[[menu.tour]]
+    name = "A Tour of Pulumi"
+    identifier = "tour"
+    url = "/tour"
+    weight = 1
+
+[[menu.tour]]
+    name = "Beyond the Basics"
+    identifier = "programs"
+    url = "/tour/programs"
+    weight = 2

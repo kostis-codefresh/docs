@@ -1,16 +1,34 @@
+
+{{ $is_tour := (hasPrefix .Path "tour/") }}
+{{ $is_start := (hasPrefix .Path "quickstart/") }}
+{{ $is_apis := (hasPrefix .Path "reference/pkg/") }}
+{{ $is_docs := (and (not $is_apis) (hasPrefix .Path "reference/")) }}
+
+{{ $menu := .Site.Menus.main }}
+{{ $menuName := "main" }}
+
+{{ if $is_start }}
+    {{ $menu = .Site.Menus.foo }}
+{{ else if $is_tour }}
+    {{ $menu = .Site.Menus.tour }}
+    {{ $menuName = "tour" }}
+{{ else }}
+    {{ $menu = .Site.Menus.bar }}
+{{ end }}
+
 <ul>
     {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
+    {{ range $menu }}
         {{ if .HasChildren }}
-            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                <a href="#">
+            <li class="{{ if $currentPage.HasMenuCurrent "tour" . }}active{{ end }}">
+                <a href="{{ .URL }}">
                     {{ .Pre }}
                     <span>{{ .Name }}</span>
                 </a>
             </li>
             <ul class="sub-menu">
                 {{ range .Children }}
-                    <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                    <li class="{{ if $currentPage.IsMenuCurrent "tour" . }}active{{ end }}">
                         <a href="{{ .URL }}">{{ .Name }}</a>
                     </li>
                 {{ end }}
@@ -25,3 +43,769 @@
         {{ end }}
     {{ end }}
 </ul>
+
+
+{{/*
+
+<!--
+
+{{ $currentPage := . }}
+{{ range .Site.Menus.main }}
+
+<ol  class="nav navbar-nav">
+    {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+    </ol>
+{{ define "breadcrumbnav" }}
+{{ if .p1.Parent }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+{{ else if not .p1.IsHome }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{ end }}
+<li{{ if eq .p1 .p2 }} class="active"{{ end }}>
+<a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a>
+</li>
+{{ end }}
+
+ -->
+*/}}
+
+
+<!-- <div class="toc">
+    <div class="sidenav-section toggleVisible separator">
+        <div class="toggleVisible" data-title="Get Started">
+            <div class="collapsed">
+                <div class="sidenav-topic sidenav-selected">
+                    <a data-title="Get Started" href="/quickstart/index.html">Get Started</a>
+                </div>
+            </div>
+            <div class="expanded">
+                <div class="sidenav-topic sidenav-selected">
+                    <a data-title="Get Started" href="/quickstart/index.html">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidenav-section toggleVisible separator">
+        <div class="toggle" data-title="Download and Install">
+            <div class="collapsed">
+                <div class="sidenav-topic ">
+                    <a data-title="Download and Install" href="/quickstart/install.html">Download and Install</a>
+                </div>
+            </div>
+            <div class="expanded">
+                <div class="sidenav-topic ">
+                    <a data-title="Download and Install" href="/quickstart/install.html">Download and Install</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="sidenav-section toggleVisible separator">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="toggle" data-title="AWS">
+            <div class="collapsed">
+                <div class="sidenav-topic ">
+                    <a data-title="AWS" href="/quickstart/aws/index.html">AWS</a>
+
+                    <span class="toggleButton">▹</span>
+
+                </div>
+            </div>
+            <div class="expanded">
+                <div class="sidenav-topic ">
+                    <a data-title="AWS" href="/quickstart/aws/index.html">AWS</a>
+
+                    <span class="toggleButton">▾</span>
+
+                </div>
+
+                <div class="sidenav-subsection">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Setup" href="/quickstart/aws/setup.html">Setup</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Serverless REST APIs using Lambda"
+                            href="/quickstart/aws/tutorial-rest-api.html">Tutorial: Serverless REST APIs using
+                            Lambda</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: EC2 Linux WebServer Instance"
+                            href="/quickstart/aws/tutorial-ec2-webserver.html">Tutorial: EC2 Linux WebServer
+                            Instance</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Serve a Static Website from S3"
+                            href="/quickstart/aws/tutorial-s3-website.html">Tutorial: Serve a Static Website from S3</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: EKS - Hello World!" href="/quickstart/aws/tutorial-eks.html">Tutorial:
+                            EKS - Hello World!</a>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="sidenav-section toggleVisible separator">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="toggle" data-title="Microsoft Azure">
+            <div class="collapsed">
+                <div class="sidenav-topic ">
+                    <a data-title="Microsoft Azure" href="/quickstart/azure/index.html">Microsoft Azure</a>
+
+                    <span class="toggleButton">▹</span>
+
+                </div>
+            </div>
+            <div class="expanded">
+                <div class="sidenav-topic ">
+                    <a data-title="Microsoft Azure" href="/quickstart/azure/index.html">Microsoft Azure</a>
+
+                    <span class="toggleButton">▾</span>
+
+                </div>
+
+                <div class="sidenav-subsection">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Setup" href="/quickstart/azure/setup.html">Setup</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Web Server Container Instance"
+                            href="/quickstart/azure/tutorial-container-webserver.html">Tutorial: Web Server Container
+                            Instance</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Azure Kubernetes Service"
+                            href="/quickstart/azure/tutorial-azure-kubernetes-service.html">Tutorial: Azure Kubernetes
+                            Service</a>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="sidenav-section toggleVisible separator">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="toggle" data-title="Google Cloud Platform">
+            <div class="collapsed">
+                <div class="sidenav-topic ">
+                    <a data-title="Google Cloud Platform" href="/quickstart/gcp/index.html">Google Cloud Platform</a>
+
+                    <span class="toggleButton">▹</span>
+
+                </div>
+            </div>
+            <div class="expanded">
+                <div class="sidenav-topic ">
+                    <a data-title="Google Cloud Platform" href="/quickstart/gcp/index.html">Google Cloud Platform</a>
+
+                    <span class="toggleButton">▾</span>
+
+                </div>
+
+                <div class="sidenav-subsection">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Setup" href="/quickstart/gcp/setup.html">Setup</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Web Server Virtual Machine Instance"
+                            href="/quickstart/gcp/tutorial-gce-webserver.html">Tutorial: Web Server Virtual Machine
+                            Instance</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: GKE - Hello World!" href="/quickstart/gcp/tutorial-gke.html">Tutorial:
+                            GKE - Hello World!</a>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="sidenav-section toggleVisible separator">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="toggle" data-title="Kubernetes">
+            <div class="collapsed">
+                <div class="sidenav-topic ">
+                    <a data-title="Kubernetes" href="/quickstart/kubernetes/index.html">Kubernetes</a>
+
+                    <span class="toggleButton">▹</span>
+
+                </div>
+            </div>
+            <div class="expanded">
+                <div class="sidenav-topic ">
+                    <a data-title="Kubernetes" href="/quickstart/kubernetes/index.html">Kubernetes</a>
+
+                    <span class="toggleButton">▾</span>
+
+                </div>
+
+                <div class="sidenav-subsection">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Setup" href="/quickstart/kubernetes/setup.html">Setup</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Hello, World!"
+                            href="/quickstart/kubernetes/tutorial-exposed-deployment.html">Tutorial: Hello, World!</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Graceful App Rollout"
+                            href="/quickstart/kubernetes/tutorial-configmap-rollout.html">Tutorial: Graceful App
+                            Rollout</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Deploying the WordPress Helm Chart"
+                            href="/quickstart/kubernetes/tutorial-wordpress-chart.html">Tutorial: Deploying the
+                            WordPress Helm Chart</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Guestbook App with Redis and Nginx"
+                            href="/quickstart/kubernetes/tutorial-guestbook.html">Tutorial: Guestbook App with Redis and
+                            Nginx</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Gating rollout on Prometheus checks"
+                            href="/quickstart/kubernetes/tutorial-p8s-rollout.html">Tutorial: Gating rollout on
+                            Prometheus checks</a>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="sidenav-section toggleVisible separator">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="toggle" data-title="Pulumi Cloud Framework">
+            <div class="collapsed">
+                <div class="sidenav-topic ">
+                    <a data-title="Pulumi Cloud Framework" href="/quickstart/cloudfx/index.html">Pulumi Cloud
+                        Framework</a>
+
+                    <span class="toggleButton">▹</span>
+
+                </div>
+            </div>
+            <div class="expanded">
+                <div class="sidenav-topic ">
+                    <a data-title="Pulumi Cloud Framework" href="/quickstart/cloudfx/index.html">Pulumi Cloud
+                        Framework</a>
+
+                    <span class="toggleButton">▾</span>
+
+                </div>
+
+                <div class="sidenav-subsection">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Serverless REST APIs with DynamoDB"
+                            href="/quickstart/cloudfx/tutorial-rest-api.html">Tutorial: Serverless REST APIs with
+                            DynamoDB</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Tutorial: Multi-Cloud Containers and Serverless"
+                            href="/quickstart/cloudfx/tutorial-thumbnailer.html">Tutorial: Multi-Cloud Containers and
+                            Serverless</a>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="sidenav-section toggleVisible ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="toggle" data-title="OpenStack">
+            <div class="collapsed">
+                <div class="sidenav-topic ">
+                    <a data-title="OpenStack" href="/quickstart/openstack/index.html">OpenStack</a>
+
+                    <span class="toggleButton">▹</span>
+
+                </div>
+            </div>
+            <div class="expanded">
+                <div class="sidenav-topic ">
+                    <a data-title="OpenStack" href="/quickstart/openstack/index.html">OpenStack</a>
+
+                    <span class="toggleButton">▾</span>
+
+                </div>
+
+                <div class="sidenav-subsection">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidenav-topic ">
+                        <a data-title="Setup" href="/quickstart/openstack/setup.html">Setup</a>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div> -->

@@ -1,6 +1,10 @@
 ---
 title: Creating a project
 redirect_from: "/tour/basics-templates.html"
+menu:
+  tour:
+    parent: tour
+    weight: 2
 ---
 
 To get started with Pulumi, you'll need a project.
@@ -13,6 +17,7 @@ Use [`pulumi new <template-name>`](/reference/cli/pulumi_new.html) to quickly sc
 {{< langchoose >}}
 
 <div class="language-prologue-javascript"></div>
+
 ```bash
 $ mkdir ahoy-pulumi && cd ahoy-pulumi
 $ pulumi new aws-javascript
@@ -29,6 +34,7 @@ New project is configured and ready to deploy with 'pulumi up'.
 ```
 
 <div class="language-prologue-typescript"></div>
+
 ```bash
 $ mkdir ahoy-pulumi && cd ahoy-pulumi
 $ pulumi new aws-typescript
@@ -45,6 +51,7 @@ New project is configured and ready to deploy with 'pulumi up'.
 ```
 
 <div class="language-prologue-python"></div>
+
 ```bash
 $ mkdir ahoy-pulumi && cd ahoy-pulumi
 $ pulumi new aws-python
@@ -61,6 +68,7 @@ New project is configured and ready to deploy with 'pulumi up'.
 ```
 
 <div class="language-prologue-go"></div>
+
 ```bash
 $ mkdir ahoy-pulumi && cd ahoy-pulumi
 $ pulumi new aws-go
