@@ -27,7 +27,6 @@
                                 {{ partial "toc.html" . }}
                             </div>
 
-                            <!-- TODO: Consider cleaning this up. -->
                             {{ $is_start := (hasPrefix .Path "quickstart/") }}
                             {{ $is_apis := (hasPrefix .Path "reference/pkg/") }}
                             {{ $is_docs := (and (not $is_apis) (hasPrefix .Path "reference/")) }}
