@@ -21,11 +21,11 @@ In this tutorial, we'll launch a new Managed Kubernetes cluster in Elastic Conta
 
     * Enter in a Pulumi project name, and description to detail what this
       Pulumi program does
-    * Enter in a name for the [Pulumi stack](https://pulumi.io/reference/stack.html), which is an instance of our Pulumi program, and is used to distinguish amongst different development phases and environments of your work streams.
+    * Enter in a name for the [Pulumi stack]({{< relref "/reference/stack.md" >}}), which is an instance of our Pulumi program, and is used to distinguish amongst different development phases and environments of your work streams.
 
 1. Add the required dependencies:
 
-    This installs the dependent packages [needed](https://pulumi.io/reference/how.html) for our Pulumi program.
+    This installs the dependent packages [needed]({{< relref "/reference/how.md" >}}) for our Pulumi program.
 
 	```bash
 	$ npm install --save @pulumi/pulumi @pulumi/aws-infra @pulumi/eks @pulumi/kubernetes
