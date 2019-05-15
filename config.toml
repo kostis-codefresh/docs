@@ -2,6 +2,8 @@ baseURL = "https://pulumi.io/"
 languageCode = "en-us"
 title = "Pulumi"
 
+sectionPagesMenu = "main"
+
 pygmentsCodefences = true
 pygmentsUseClasses = true
 
