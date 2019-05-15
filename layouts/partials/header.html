@@ -23,37 +23,19 @@
                         </a>
                         <div class="mobile-menu-bg"></div>
                         <nav class="main-nav-wrapper dropdown-menu" aria-labelledby=".toggle-menu">
-                            <!-- TODO: TOC --->
-                            <!--
                             <div class="toc-in-nav visible-xs-block visible-sm-block" style="text-align: right">
-                                {% if include.tree %}
-                                    {% include toc.html tree=include.tree %}
-                                {% endif %}
+                                {{ partial "toc.html" . }}
                             </div>
 
-                            {% if toc.nav_section == "Documentation" %}
-                                {% if page.path contains "reference/pkg/" %}
-                                    {% assign is_docs = false %}
-                                    {% assign is_apis = true %}
-                                {% else %}
-                                    {% assign is_docs = true %}
-                                    {% assign is_apis = false %}
-                                {% endif %}
-                            {% endif %}
-                            -->
+                            <!-- TODO: Consider cleaning this up. -->
+                            {{ $is_start := (hasPrefix .Path "quickstart/") }}
+                            {{ $is_apis := (hasPrefix .Path "reference/pkg/") }}
+                            {{ $is_docs := (and (not $is_apis) (hasPrefix .Path "reference/")) }}
 
-                            <!-- TODO: Fix this so it shows the selected button -->
-                            <!--
                             <ul class="main-nav">
-                                <li class="{% if toc.nav_section == "Get Started" %}current-page{% endif %}"><a href="/quickstart">Get Started</a></li>
-                                <li class="{% if is_docs %}current-page{% endif %}"><a href="/reference">Documentation</a></li>
-                                <li class="{% if is_apis %}current-page{% endif %}"><a href="/reference/pkg">APIs</a></li>
-                            </ul>
-                            -->
-                            <ul class="main-nav">
-                                <li><a href="/quickstart">Get Started</a></li>
-                                <li><a href="/reference">Documentation</a></li>
-                                <li><a href="/reference/pkg">APIs</a></li>
+                                <li class="{{ if $is_start }}current-page{{ end }}"><a href="/quickstart">Get Started</a></li>
+                                <li class="{{ if $is_docs }}current-page{{ end }}"><a href="/reference">Documentation</a></li>
+                                <li class="{{ if $is_apis }}current-page{{ end }}"><a href="/reference/pkg">APIs</a></li>
                             </ul>
 
                             <ul class="utility-nav visible-xs-block visible-sm-block">
