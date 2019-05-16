@@ -21,21 +21,25 @@ These packages are installed as any ordinary package would be:
 {{< langchoose >}}
 
 <div class="language-prologue-javascript"></div>
+
 ```bash
 $ npm install @pulumi/aws --save
 ```
 
 <div class="language-prologue-typescript"></div>
+
 ```bash
 $ npm install @pulumi/aws --save
 ```
 
 <div class="language-prologue-python"></div>
+
 ```bash
 $ pip install pulumi_aws
 ```
 
 <div class="language-prologue-go"></div>
+
 ```bash
 $ go get -u github.com/pulumi/pulumi-aws/sdk/go/aws/...
 ```
