@@ -15,7 +15,10 @@
     {{ $menu = .Site.Menus.bar }}
 {{ end }}
 
-{{ $len := (len $menu) }}
+{{ $len := 0 }}
+{{ if $menu }}
+    {{ $len = (len $menu) }}
+{{ end }}
 
 <!-- TODO implement expansion and selection. -->
 {{ $sidenav_expanded := true }}
