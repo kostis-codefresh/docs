@@ -1,5 +1,9 @@
 ---
 title: Performing updates
+menu:
+  tour:
+    parent: tour
+    weight: 6
 ---
 
 After standing up our program for the first time, it will be live and running in the cloud.
@@ -59,7 +63,7 @@ Permalink: https://app.pulumi.com/broomllc/ahoy-pulumi-dev/updates/2
 We're almost done with the first lesson.  Before wrapping up, however, let's destroy everything we just created.
 
 <div class="tour-nav">
-    <a class="tour-button enabled" href="basics-up.html" title="Spinning up">◀</a>
+    <a class="tour-button enabled" href="{{< relref "basics-up.md" >}}" title="Spinning up">◀</a>
     <span class="tour-index"><strong>7</strong>/8</span>
-    <a class="tour-button enabled" href="basics-destroying.html" title="Destroying">▶</a>
+    <a class="tour-button enabled" href="{{< relref "basics-destroying.md" >}}" title="Destroying">▶</a>
 </div>

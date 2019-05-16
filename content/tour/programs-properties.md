@@ -1,5 +1,9 @@
 ---
 title: Resource properties
+menu:
+  tour:
+    parent: programs
+    weight: 5
 ---
 
 Each resource object has two kinds of properties: *inputs* and *outputs*.
@@ -70,7 +74,7 @@ another, Pulumi can track dependencies accurately for purposes of parallelism, s
 ***
 
 <div class="tour-nav">
-    <a class="tour-button enabled" href="programs-resources.html" title="Resources">◀</a>
+    <a class="tour-button enabled" href="{{< relref "programs-resources.md" >}}" title="Resources">◀</a>
     <span class="tour-index"><strong>6</strong>/8</span>
-    <a class="tour-button enabled" href="programs-configuration.html" title="Custom configuration">▶</a>
+    <a class="tour-button enabled" href="{{< relref "programs-configuration.md" >}}" title="Custom configuration">▶</a>
 </div>

@@ -30,17 +30,3 @@ pygmentsUseClasses = true
     name = "Bar2"
     identifier = "bar2"
     url = "/bar2"
-
-
-
-[[menu.tour]]
-    name = "A Tour of Pulumi"
-    identifier = "tour"
-    url = "/tour"
-    weight = 1
-
-[[menu.tour]]
-    name = "Beyond the Basics"
-    identifier = "programs"
-    url = "/tour/programs"
-    weight = 2

@@ -1,5 +1,9 @@
 ---
 title: Packages
+menu:
+  tour:
+    parent: programs
+    weight: 2
 ---
 
 Pulumi programs use packages just like ordinary programs.
@@ -66,7 +70,7 @@ using all the existing tools and ecosystems for packages in your favorite langua
 Many packages demand configuration to customize their behavior.  Let's see how to do that now.
 
 <div class="tour-nav">
-    <a class="tour-button enabled" href="programs-stacks.html" title="Stacks">◀</a>
+    <a class="tour-button enabled" href="{{< relref "programs-stacks.md" >}}" title="Stacks">◀</a>
     <span class="tour-index"><strong>3</strong>/8</span>
-    <a class="tour-button enabled" href="programs-configuring.html" title="Configuring your stack">▶</a>
+    <a class="tour-button enabled" href="{{< relref "programs-configuring.md" >}}" title="Configuring your stack">▶</a>
 </div>

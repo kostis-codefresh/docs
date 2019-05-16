@@ -1,5 +1,9 @@
 ---
 title: Stack exports
+menu:
+  tour:
+    parent: programs
+    weight: 7
 ---
 
 It can be handy to export values from your stacks.
@@ -89,10 +93,10 @@ This concludes the second lesson of the tour.  If there are topics you'd like to
 get in touch.  Feel free to file suggestions as issues directly in our
 [pulumi/docs repo](https://github.com/pulumi/docs/issues).
 
-If you're ready to start programming the cloud, check out the [tutorials](../quickstart/index.html#tutorials) next!
+If you're ready to start programming the cloud, check out the [getting started]({{< relref "/quickstart" >}}) guide next!
 
 <div class="tour-nav">
-    <a class="tour-button enabled" href="programs-configuration.html" title="Custom configuration">◀</a>
+    <a class="tour-button enabled" href="{{< relref "programs-configuration.md" >}}" title="Custom configuration">◀</a>
     <span class="tour-index"><strong>8</strong>/8</span>
     <a class="tour-button disabled">▶</a>
 </div>

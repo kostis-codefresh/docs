@@ -9,10 +9,10 @@ menu:
 
 To get started with Pulumi, you'll need a project.
 
-A project is defined by a directory that contains a `Pulumi.yaml` [project file](../reference/project.html).  This file
+A project is defined by a directory that contains a `Pulumi.yaml` [project file]({{< relref "/reference/project.md" >}}).  This file
 simply defines minimal metadata about your program so that Pulumi knows what to do with it.
 
-Use [`pulumi new <template-name>`](/reference/cli/pulumi_new.html) to quickly scaffold a new project from scratch:
+Use [`pulumi new <template-name>`]({{< relref "/reference/cli/pulumi_new.md" >}}) to quickly scaffold a new project from scratch:
 
 {{< langchoose >}}
 
@@ -95,7 +95,7 @@ missing!
 Next up, let's learn how to deploy our program to the cloud.
 
 <div class="tour-nav">
-    <a class="tour-button enabled" href="basics-programs.html" title="Programs">◀</a>
+    <a class="tour-button enabled" href="{{< relref "basics-programs.md" >}}" title="Programs">◀</a>
     <span class="tour-index"><strong>3</strong>/8</span>
-    <a class="tour-button enabled" href="basics-deploying.html" title="Deploying code">▶</a>
+    <a class="tour-button enabled" href="{{< relref "basics-deploying.md" >}}" title="Deploying code">▶</a>
 </div>
