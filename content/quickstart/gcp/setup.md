@@ -21,7 +21,7 @@ When developing locally, we recommend that you use `gcloud login` to configure y
     $ gcloud auth application-default login
     ```
 
-If you are using Pulumi in an non-interactive setting (such as a CI/CD system) you will need to [configure and use a service account](./service-account.html) instead.
+If you are using Pulumi in an non-interactive setting (such as a CI/CD system) you will need to [configure and use a service account]({{< relref "service-account.md" >}}) instead.
 
 ## Optional Settings
 
