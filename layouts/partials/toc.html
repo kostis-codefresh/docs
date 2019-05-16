@@ -1,33 +1,31 @@
-{{ $is_start := (hasPrefix .Path "quickstart/") }}
-{{ $is_apis := (hasPrefix .Path "reference/pkg/") }}
-{{ $is_docs := (and (not $is_apis) (hasPrefix .Path "reference/")) }}
-{{ $is_tour := (hasPrefix .Path "tour/") }}
 
 {{ $menu := .Site.Menus.main }}
-{{ $menuName := "main" }}
-
-{{ if $is_start }}
+{{ if hasPrefix .RelPermalink "/quickstart/" }}
     {{ $menu = .Site.Menus.quickstart }}
-{{ else if $is_tour }}
+{{ else if hasPrefix .RelPermalink "/reference/"}}
+    {{ $menu = .Site.Menus.reference }}
+{{ else if hasPrefix .RelPermalink "/tour/" }}
     {{ $menu = .Site.Menus.tour }}
-    {{ $menuName = "tour" }}
-{{ else }}
-    {{ $menu = .Site.Menus.bar }}
+{{ else if hasPrefix .RelPermalink "/aws/" }}
+    {{ $menu = .Site.Menus.aws }}
 {{ end }}
 
-{{ $len := 0 }}
 {{ if $menu }}
-    {{ $len = (len $menu) }}
-{{ end }}
-
-<!-- TODO implement expansion and selection. -->
-{{ $sidenav_expanded := true }}
-{{ $sidenav_selected := "" }}
-
 <div class="toc">
     {{ $currentPage := . }}
+    {{ $len := (len $menu) }}
     {{ range $index, $element := $menu }}
         {{ $isLast := eq (add $index 1) $len }}
+
+        {{ $sidenav_expanded := false }}
+        {{ $sidenav_selected := "" }}
+
+        {{ if eq $currentPage.RelPermalink .URL }}
+            {{ $sidenav_expanded = true }}
+            {{ $sidenav_selected = "sidenav-selected" }}
+        {{ else if hasPrefix $currentPage.RelPermalink .URL }}
+            {{ $sidenav_expanded = true }}
+        {{ end }}
 
         {{ $toggle_state := "toggleVisible" }}
         {{ if $sidenav_expanded }}
@@ -55,7 +53,7 @@
                     </div>
                     {{ if .HasChildren }}
                         <div class="sidenav-subsection">
-                            {{ template "tocsub" . }}
+                            {{ template "tocsub" (dict "page" $currentPage "menu" . ) }}
                         </div>
                     {{ end }}
                 </div>
@@ -63,54 +61,30 @@
         </div>
     {{ end }}
 </div>
+{{ end }}
 
 {{ define "tocsub" }}
-    <!-- TODO implement these -->
-    {{ $sidenav_expanded := true }}
-    {{ $sidenav_selected := "" }}
+    {{ $page := .page }}
 
-    {{ range .Children }}
+    {{ range .menu.Children }}
+        {{ $sidenav_selected := "" }}
+        {{ if eq $page.RelPermalink .URL }}
+            {{ $sidenav_selected = "sidenav-selected" }}
+        {{ end }}
+
         {{ if .HasChildren }}
             <div data-title="{{ .Name }}">
-                <div class="sidenav-topic {{ $sidenav_expanded }}">
+                <div class="sidenav-topic {{ $sidenav_selected }}">
                     <a data-title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
                 </div>
                 <div class="sidenav-subsection">
-                    {{ template "tocsub" . }}
+                    {{ template "tocsub" (dict "page" $page "menu" . ) }}
                 </div>
             </div>
         {{ else }}
-            <div class="sidenav-topic {{ $sidenav_expanded }}">
+            <div class="sidenav-topic {{ $sidenav_selected }}">
                 <a data-title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
             </div>
         {{ end }}
     {{ end }}
 {{ end }}
-
-
-{{/*
-<!--
-{{ if .HasChildren }}
-    <li class="{{ if $currentPage.HasMenuCurrent "tour" . }}active{{ end }}">
-        <a href="{{ .URL }}">
-            {{ .Pre }}
-            <span>{{ .Name }}</span>
-        </a>
-    </li>
-    <ul class="sub-menu">
-        {{ range .Children }}
-            <li class="{{ if $currentPage.IsMenuCurrent "tour" . }}active{{ end }}">
-                <a href="{{ .URL }}">{{ .Name }}</a>
-            </li>
-        {{ end }}
-    </ul>
-{{ else }}
-    <li>
-        <a href="{{ .URL }}">
-            {{ .Pre }}
-            <span>{{ .Name }}</span>
-        </a>
-    </li>
-{{ end }}
--->
-*/}}
