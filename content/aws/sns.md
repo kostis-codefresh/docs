@@ -10,6 +10,10 @@ aliases:
 service: "SNS"
 description: "is a flexible, fully managed pub/sub messaging and mobile notifications service for coordinating the delivery of messages to subscribing endpoints and clients"
 aws_here: "https://aws.amazon.com/sns/"
+
+menu:
+  aws:
+    parent: aws
 ---
 
 ## Create an AWS SNS resource using `@pulumi/aws`

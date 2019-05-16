@@ -10,6 +10,10 @@ aliases:
 service: "IAM"
 description: "enables you to manage access to AWS services and resources securely"
 aws_here: "https://aws.amazon.com/iam/"
+
+menu:
+  aws:
+    parent: aws
 ---
 
 ## Create an AWS IAM resource using `@pulumi/aws`

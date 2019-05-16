@@ -3,6 +3,11 @@ title: "How to use Pulumi with AWS"
 og:
     description: "Use Pulumi and AWS to code, deploy, and manage cloud, serverless, and container apps and infrastructure"
     image: "/images/service/aws-pulumi.png"
+menu:
+  aws:
+    name: AWS
+    identifier: aws
+    weight: 1
 ---
 
 ## Multi-cloud development with `@pulumi\cloud`

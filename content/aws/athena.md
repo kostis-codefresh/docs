@@ -10,6 +10,10 @@ aliases:
 service: "Athena"
 description: "is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL"
 aws_here: "https://aws.amazon.com/athena/"
+
+menu:
+  aws:
+    parent: aws
 ---
 
 ## Create an AWS Athena resource using `@pulumi/aws`

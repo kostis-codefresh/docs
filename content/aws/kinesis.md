@@ -10,6 +10,10 @@ aliases:
 service: "Kinesis"
 description: "makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information"
 aws_here: "https://aws.amazon.com/kinesis/"
+
+menu:
+  aws:
+    parent: aws
 ---
 
 ## Create an AWS Kinesis resource using `@pulumi/aws`

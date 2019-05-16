@@ -10,6 +10,10 @@ aliases:
 service: "CloudWatch"
 description: "is a monitoring service for AWS cloud resources and the applications you run on Amazon Web Services."
 aws_here: "https://aws.amazon.com/cloudwatch/"
+
+menu:
+  aws:
+    parent: aws
 ---
 
 ## Create an AWS CloudWatch resource using `@pulumi/aws`

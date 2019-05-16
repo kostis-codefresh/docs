@@ -10,6 +10,10 @@ aliases:
 service: "DynamoDB"
 description: "is a fast and flexible nonrelational database service for all applications that need consistent, single-digit millisecond latency at any scale"
 aws_here: "https://aws.amazon.com/dynamodb/"
+
+menu:
+  aws:
+    parent: aws
 ---
 
 ## Create an AWS DynamoDB resource using `@pulumi/aws`
