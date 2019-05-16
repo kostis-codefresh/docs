@@ -3,6 +3,9 @@ title: "Tutorial: Containers"
 redirect_from:
   - /quickstart/aws-containers.html
   - /quickstart/aws/tutorial-containers-ecs-fargate.html
+menu:
+  quickstart:
+    parent: aws
 ---
 
 In this tutorial, we'll use TypeScript to build and deploy a simple container using the [`@pulumi/aws`]() and [`@pulumi/aws-infra`]() frameworks.  This example can be deployed to AWS on either Fargate, and can be simply updated to use ECS as well.  The [code for this tutorial](https://github.com/pulumi/examples/tree/master/aws-ts-containers) is available on GitHub.

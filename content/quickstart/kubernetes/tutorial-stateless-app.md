@@ -1,5 +1,8 @@
 ---
 title: "Tutorial: Run a Stateless App Deployment"
+menu:
+  quickstart:
+    parent: kubernetes
 ---
 
 In this tutorial, we'll run an application using a [Kubernetes

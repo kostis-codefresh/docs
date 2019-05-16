@@ -1,6 +1,9 @@
 ---
 title: "Tutorial: AWS Containers and Serverless"
 redirect_from: /quickstart/aws-extract-thumbnail.html
+menu:
+  quickstart:
+    parent: aws
 ---
 
 In this tutorial, we'll use TypeScript to combine serverless, containers and cloud infrastructure together into a "Colada" application. We use serverless functions as event triggers and containers for longer-running tasks.

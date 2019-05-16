@@ -1,6 +1,11 @@
 ---
 title: Setup
 redirect_from: /install/aws.html
+menu:
+  quickstart:
+    identifier: aws-setup
+    parent: aws
+    weight: 1
 ---
 
 <!-- LINKS -->

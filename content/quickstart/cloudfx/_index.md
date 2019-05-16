@@ -1,6 +1,10 @@
 ---
 title: Pulumi Cloud Framework
 redirect_from: /reference/cloud.html
+menu:
+  quickstart:
+    identifier: cloud
+    weight: 7
 ---
 
 <img src="/images/quickstart/cloudfx-purple.png" align="right">

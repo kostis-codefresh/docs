@@ -3,6 +3,9 @@ title: "Tutorial: EC2 Linux WebServer Instance"
 redirect_from:
   - /quickstart/part1.html
   - /quickstart/aws-ec2.html
+menu:
+  quickstart:
+    parent: aws
 ---
 
 In this tutorial, we'll use JavaScript to deploy a simple webserver EC2 instance in AWS. The [code for this tutorial](https://github.com/pulumi/examples/tree/master/aws-js-webserver) is available on GitHub. 

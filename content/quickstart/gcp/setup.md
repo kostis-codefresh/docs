@@ -1,6 +1,11 @@
 ---
 title: Setup
 redirect_from: /install/gcp.html
+menu:
+  quickstart:
+    identifier: gcp-setup
+    parent: gcp
+    weight: 1
 ---
 
 [Pulumi Google Cloud Platform Provider]: ./index.html

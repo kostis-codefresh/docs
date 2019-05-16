@@ -1,5 +1,8 @@
 ---
 title: "Tutorial: Graceful App Rollout"
+menu:
+  quickstart:
+    parent: kubernetes
 ---
 
 This tutorial shows you how to use Pulumi to write and manage a Kubernetes application through it's

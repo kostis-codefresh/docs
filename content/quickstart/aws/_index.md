@@ -1,6 +1,10 @@
 ---
 title: AWS
 redirect_from: /reference/aws.html
+menu:
+  quickstart:
+    identifier: aws
+    weight: 3
 ---
 
 <img src="/images/quickstart/aws-purple.png" align="right">

@@ -1,5 +1,8 @@
 ---
 title: Get Started
+menu:
+  quickstart:
+    weight: 1
 ---
 
 Pulumi is a platform for building and deploying cloud infrastructure and applications in your favorite language on any

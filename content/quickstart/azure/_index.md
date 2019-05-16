@@ -1,6 +1,10 @@
 ---
 title: Microsoft Azure
 redirect_from: /reference/azure.html
+menu:
+  quickstart:
+    identifier: azure
+    weight: 4
 ---
 
 <img src="/images/quickstart/azure-purple.png" align="right">

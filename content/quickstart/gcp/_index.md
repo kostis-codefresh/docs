@@ -1,6 +1,10 @@
 ---
 title: Google Cloud Platform
 redirect_from: /reference/gcp.html
+menu:
+  quickstart:
+    identifier: gcp
+    weight: 5
 ---
 
 <img src="/images/quickstart/gcp-purple.png" align="right">

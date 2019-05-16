@@ -1,6 +1,11 @@
 ---
 title: Setup
 redirect_from: /install/azure.html
+menu:
+  quickstart:
+    identifier: azure-setup
+    parent: azure
+    weight: 1
 ---
 
 The [Pulumi Azure provider](./index.html) uses the Azure SDK to manage and provision resources.

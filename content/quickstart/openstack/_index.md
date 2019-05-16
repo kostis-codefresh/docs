@@ -1,6 +1,10 @@
 ---
 title: OpenStack
 redirect_from: /reference/openstack.html
+menu:
+  quickstart:
+    identifier: openstack
+    weight: 8
 ---
 
 <img src="/images/quickstart/openstack-purple.png" align="right">

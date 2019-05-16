@@ -1,6 +1,9 @@
 ---
 title: "Tutorial: Guestbook App with Redis and Nginx"
 redirect_from: /quickstart/kubernetes-guestbook.html
+menu:
+  quickstart:
+    parent: kubernetes
 ---
 
 In this tutorial, we'll build and deploy

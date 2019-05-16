@@ -7,7 +7,7 @@
 {{ $menuName := "main" }}
 
 {{ if $is_start }}
-    {{ $menu = .Site.Menus.foo }}
+    {{ $menu = .Site.Menus.quickstart }}
 {{ else if $is_tour }}
     {{ $menu = .Site.Menus.tour }}
     {{ $menuName = "tour" }}

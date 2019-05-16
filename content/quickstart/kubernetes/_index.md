@@ -1,6 +1,10 @@
 ---
 title: Kubernetes
 redirect_from: /reference/kubernetes.html
+menu:
+  quickstart:
+    identifier: kubernetes
+    weight: 6
 ---
 
 <img src="/images/quickstart/k8s-purple.png" align="right">

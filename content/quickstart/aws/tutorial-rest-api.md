@@ -1,6 +1,9 @@
 ---
 title: "Tutorial: Serverless REST APIs using Lambda"
 redirect_from: /quickstart/aws-hello-world.html
+menu:
+  quickstart:
+    parent: aws
 ---
 
 In this tutorial, we'll use Pulumi to create a serverless app that serves static content, in addition to dynamic routes

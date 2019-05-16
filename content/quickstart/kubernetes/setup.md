@@ -1,6 +1,11 @@
 ---
 title: Setup
 redirect_from: /install/kubernetes.html
+menu:
+  quickstart:
+    identifier: kubernetes-setup
+    parent: kubernetes
+    weight: 1
 ---
 
 <!-- LINKS -->

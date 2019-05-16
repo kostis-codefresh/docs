@@ -1,6 +1,9 @@
 ---
 title: "Tutorial: Deploying the WordPress Helm Chart"
 redirect_from: /quickstart/kubernetes-guestbook.html
+menu:
+  quickstart:
+    parent: kubernetes
 ---
 
 In this tutorial, we'll use the Helm API of `@pulumi/kubernetes` to deploy `v2.1.3` of the Wordpress

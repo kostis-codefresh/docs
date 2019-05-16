@@ -1,5 +1,8 @@
 ---
 title: "Tutorial: Web Server Container Instance"
+menu:
+  quickstart:
+    parent: azure
 ---
 
 In this tutorial, we'll use JavaScript to deploy a simple nginx container to Azure Container Instance (ACI).
