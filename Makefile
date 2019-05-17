@@ -52,7 +52,7 @@ test:
 
 .PHONY: validate
 validate:
-	hugo server -D >/dev/null 2>&1
+	hugo server -D &>/dev/null 2>&1 &
 	$(MAKE) test
 	pkill -f hugo
 
