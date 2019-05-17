@@ -1,5 +1,6 @@
 ---
 title: Stacks
+expanded_url: /tour/programs/
 menu:
   tour:
     parent: programs

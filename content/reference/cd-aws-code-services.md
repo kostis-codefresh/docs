@@ -1,5 +1,6 @@
 ---
 title: AWS Code Services
+expanded_url: /reference/cd/
 menu:
   reference:
     parent: cd

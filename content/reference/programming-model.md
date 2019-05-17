@@ -1,5 +1,6 @@
 ---
 title: "Programming Model"
+expanded_url: /reference/concepts/
 menu:
   reference:
     parent: concepts

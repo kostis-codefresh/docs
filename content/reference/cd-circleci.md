@@ -1,5 +1,6 @@
 ---
 title: CircleCI
+expanded_url: /reference/cd/
 menu:
   reference:
     parent: cd

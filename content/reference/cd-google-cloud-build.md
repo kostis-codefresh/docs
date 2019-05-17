@@ -1,5 +1,6 @@
 ---
 title: Google Cloud Build
+expanded_url: /reference/cd/
 menu:
   reference:
     parent: cd

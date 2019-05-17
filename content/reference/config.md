@@ -1,5 +1,6 @@
 ---
 title: "Configuration and Secrets"
+expanded_url: /reference/concepts/
 menu:
   reference:
     parent: concepts

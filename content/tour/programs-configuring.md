@@ -1,5 +1,6 @@
 ---
 title: Configuring your stack
+expanded_url: /tour/programs/
 menu:
   tour:
     parent: programs

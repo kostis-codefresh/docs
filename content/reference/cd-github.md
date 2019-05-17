@@ -1,5 +1,6 @@
 ---
 title: Pulumi GitHub App
+expanded_url: /reference/service/
 menu:
   reference:
     parent: teams

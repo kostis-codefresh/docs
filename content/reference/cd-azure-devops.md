@@ -1,5 +1,6 @@
 ---
 title: Azure DevOps
+expanded_url: /reference/cd/
 menu:
   reference:
     parent: cd

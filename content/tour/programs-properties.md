@@ -1,5 +1,6 @@
 ---
 title: Resource properties
+expanded_url: /tour/programs/
 menu:
   tour:
     parent: programs
