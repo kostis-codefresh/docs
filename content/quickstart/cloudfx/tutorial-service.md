@@ -2,7 +2,6 @@
 title: "Tutorial: Containers"
 aliases:
   - /quickstart/aws-containers.html
-  - /quickstart/aws/tutorial-containers-ecs-fargate.html
 menu:
   quickstart:
     identifier: cloud-containers
