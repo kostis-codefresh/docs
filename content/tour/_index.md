@@ -1,6 +1,6 @@
 ---
 title: A Tour of Pulumi
-redirect_from: /concepts/
+aliases: ["/concepts/"]
 menu:
   tour:
     identifier: tour

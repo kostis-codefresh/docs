@@ -1,6 +1,6 @@
 ---
 title: Setup
-redirect_from: /install/azure.html
+aliases: ["/install/azure.html"]
 menu:
   quickstart:
     identifier: azure-setup

@@ -1,6 +1,6 @@
 ---
 title: Setup
-redirect_from: /install/aws.html
+aliases: ["/install/aws.html"]
 menu:
   quickstart:
     identifier: aws-setup

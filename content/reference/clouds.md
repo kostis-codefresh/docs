@@ -1,6 +1,6 @@
 ---
 title: Supported Clouds
-redirect_from: "/quickstart/clouds.html"
+aliases: ["/quickstart/clouds.html"]
 menu:
   reference:
     identifier: clouds

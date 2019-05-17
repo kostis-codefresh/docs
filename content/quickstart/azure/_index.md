@@ -1,6 +1,6 @@
 ---
 title: Microsoft Azure
-redirect_from: /reference/azure.html
+aliases: ["/reference/azure.html"]
 menu:
   quickstart:
     identifier: azure

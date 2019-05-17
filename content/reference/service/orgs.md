@@ -1,6 +1,6 @@
 ---
 title: Organizations
-redirect_from: "/reference/service/editions.html"
+aliases: ["/reference/service/editions.html"]
 menu:
   reference:
     parent: teams

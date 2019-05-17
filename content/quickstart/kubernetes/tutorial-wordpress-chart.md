@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Deploying the WordPress Helm Chart"
-redirect_from: /quickstart/kubernetes-guestbook.html
+aliases: ["/quickstart/kubernetes-guestbook.html"]
 menu:
   quickstart:
     parent: kubernetes

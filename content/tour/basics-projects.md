@@ -1,6 +1,6 @@
 ---
 title: Creating a project
-redirect_from: "/tour/basics-templates.html"
+aliases: ["/tour/basics-templates.html"]
 menu:
   tour:
     parent: tour

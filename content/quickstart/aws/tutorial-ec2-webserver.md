@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: EC2 Linux WebServer Instance"
-redirect_from:
+aliases:
   - /quickstart/part1.html
   - /quickstart/aws-ec2.html
 menu:

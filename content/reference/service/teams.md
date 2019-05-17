@@ -1,6 +1,6 @@
 ---
 title: Teams
-redirect_from: "/reference/service/collaboration.html"
+aliases: ["/reference/service/collaboration.html"]
 menu:
   reference:
     parent: teams

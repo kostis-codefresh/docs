@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Serverless REST APIs using Lambda"
-redirect_from: /quickstart/aws-hello-world.html
+aliases: ["/quickstart/aws-hello-world.html"]
 menu:
   quickstart:
     parent: aws

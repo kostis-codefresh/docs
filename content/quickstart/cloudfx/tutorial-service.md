@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Containers"
-redirect_from:
+aliases:
   - /quickstart/aws-containers.html
   - /quickstart/aws/tutorial-containers-ecs-fargate.html
 menu:

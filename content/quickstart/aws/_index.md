@@ -1,6 +1,6 @@
 ---
 title: AWS
-redirect_from: /reference/aws.html
+aliases: ["/reference/aws.html"]
 menu:
   quickstart:
     identifier: aws

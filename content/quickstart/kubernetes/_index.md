@@ -1,6 +1,6 @@
 ---
 title: Kubernetes
-redirect_from: /reference/kubernetes.html
+aliases: ["/reference/kubernetes.html"]
 menu:
   quickstart:
     identifier: kubernetes

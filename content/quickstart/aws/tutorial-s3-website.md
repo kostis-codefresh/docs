@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Serve a Static Website from S3"
-redirect_from:
+aliases:
   - /quickstart/part2.html
   - /quickstart/aws-s3-website.html
 menu:

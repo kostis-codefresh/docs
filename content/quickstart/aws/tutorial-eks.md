@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: EKS - Hello World!"
-redirect_from: /quickstart/eks-hello-world.html
+aliases: ["/quickstart/eks-hello-world.html"]
 menu:
   quickstart:
     parent: aws

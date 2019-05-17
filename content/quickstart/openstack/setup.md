@@ -1,6 +1,6 @@
 ---
 title: Setup
-redirect_from: /install/openstack.html
+aliases: ["/install/openstack.html"]
 menu:
   quickstart:
     identifier: openstack-setup
