@@ -1,5 +1,6 @@
 ---
 title: "Python"
+expanded_url: /reference/languages/
 menu:
   reference:
     parent: languages

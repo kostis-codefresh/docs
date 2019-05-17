@@ -27,6 +27,14 @@
             {{ $sidenav_expanded = true }}
         {{ end }}
 
+        {{/*
+            If the page has an explicitly set `expanded_url` param, use it when
+            determining whether the sidenav should be expanded.
+        */}}
+        {{ if eq $currentPage.Params.expanded_url .URL }}
+            {{ $sidenav_expanded = true }}
+        {{ end }}
+
         {{ $toggle_state := "toggleVisible" }}
         {{ if $sidenav_expanded }}
             {{ $toggle_state = "toggleVisible" }}
@@ -53,7 +61,7 @@
                     </div>
                     {{ if .HasChildren }}
                         <div class="sidenav-subsection">
-                            {{ template "tocsub" (dict "page" $currentPage "menu" . ) }}
+                            {{ template "tocsub" (dict "page" $currentPage "menu" . "prefix_selection" false) }}
                         </div>
                     {{ end }}
                 </div>
@@ -65,10 +73,20 @@
 
 {{ define "tocsub" }}
     {{ $page := .page }}
+    {{ $prefix_selection := .prefix_selection }}
 
     {{ range .menu.Children }}
         {{ $sidenav_selected := "" }}
         {{ if eq $page.RelPermalink .URL }}
+            {{ $sidenav_selected = "sidenav-selected" }}
+        {{ end }}
+
+        {{/*
+            When `$prefix_selection` is `true` and $page.RelPermalink is equal to
+            the menu's URL, select the menu. This allows a package's menu to remain
+            selected when viewing one of its modules in the API Reference.
+        */}}
+        {{ if and $prefix_selection (hasPrefix $page.RelPermalink .URL) }}
             {{ $sidenav_selected = "sidenav-selected" }}
         {{ end }}
 
@@ -78,7 +96,7 @@
                     <a data-title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
                 </div>
                 <div class="sidenav-subsection">
-                    {{ template "tocsub" (dict "page" $page "menu" . ) }}
+                    {{ template "tocsub" (dict "page" $page "menu" . "prefix_selection" true) }}
                 </div>
             </div>
         {{ else }}

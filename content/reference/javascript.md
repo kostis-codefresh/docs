@@ -2,6 +2,8 @@
 title: "Node.js"
 redirect_from: "npm-packages.html"
 redirect_from: "install/configure-npm.html"
+
+expanded_url: /reference/languages/
 menu:
   reference:
     parent: languages
