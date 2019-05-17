@@ -1,6 +1,6 @@
 ---
 title: OpenStack
-redirect_from: /reference/openstack.html
+aliases: ["/reference/openstack.html"]
 menu:
   quickstart:
     identifier: openstack

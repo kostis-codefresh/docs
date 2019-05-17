@@ -1,6 +1,6 @@
 ---
 title: Pulumi Cloud Framework
-redirect_from: /reference/cloud.html
+aliases: ["/reference/cloud.html"]
 menu:
   quickstart:
     identifier: cloud

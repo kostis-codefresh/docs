@@ -1,6 +1,6 @@
 ---
 title: Pulumi vs. Terraform
-redirect_from: /reference/terraform.html
+aliases: ["/reference/terraform.html"]
 menu:
   reference:
     parent: vs

@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-redirect_from: /install/changelog.html
+aliases: ["/install/changelog.html"]
 menu:
   reference:
     weight: 11

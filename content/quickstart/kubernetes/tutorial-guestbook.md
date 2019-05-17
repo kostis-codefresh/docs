@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Guestbook App with Redis and Nginx"
-redirect_from: /quickstart/kubernetes-guestbook.html
+aliases: ["/quickstart/kubernetes-guestbook.html"]
 menu:
   quickstart:
     parent: kubernetes

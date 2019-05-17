@@ -1,6 +1,6 @@
 ---
 title: Google Cloud Platform
-redirect_from: /reference/gcp.html
+aliases: ["/reference/gcp.html"]
 menu:
   quickstart:
     identifier: gcp

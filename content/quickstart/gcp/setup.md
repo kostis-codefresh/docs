@@ -1,6 +1,6 @@
 ---
 title: Setup
-redirect_from: /install/gcp.html
+aliases: ["/install/gcp.html"]
 menu:
   quickstart:
     identifier: gcp-setup

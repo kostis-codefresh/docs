@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: GKE - Hello World!"
-redirect_from: /quickstart/gke-hello-world.html
+aliases: ["/quickstart/gke-hello-world.html"]
 menu:
   quickstart:
     parent: gcp
