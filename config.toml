@@ -9,6 +9,10 @@ pygmentsUseClasses = true
 
 sectionPagesMenu = "main"
 
+[blackfriday]
+    fractions = false
+    extensions = ["noEmptyLineBeforeBlock"]
+
 [params]
     repositoryURL = "https://github.com/pulumi/docs"
     repositoryBranch = "master"
