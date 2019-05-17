@@ -93,7 +93,7 @@ In this tutorial, we'll use JavaScript to deploy a simple webserver EC2 instance
 
     To see the full details of the deployment and the resources that are now part of the stack, open the update link in a browser. The **Resources** tab on pulumi.com has a link to the AWS console for the provisioned EC2 instance.
 
-1.  To view the provisioned resources on the command line, run `pulumi stack`. You'll also see two [stack outputs](/reference/stack.html#output) corresponding to the IP and full-qualified host name of the EC2 instance we've created.  
+1.  To view the provisioned resources on the command line, run `pulumi stack`. You'll also see two [stack outputs]({{< relref "/reference/stack#outputs" >}}) corresponding to the IP and full-qualified host name of the EC2 instance we've created.  
 
     ```
     $ pulumi stack
@@ -202,7 +202,7 @@ In this tutorial, we saw how to use Pulumi programs to create and manage cloud r
 For a similar example in other languages and clouds, see the [Web Server examples collection](https://github.com/pulumi/examples#web-server).
 
 <!-- Common links -->
-[EC2 Instance]: /reference/pkg/nodejs/@pulumi/aws/ec2/index.html#Instance
-[Security Group]: /reference/pkg/nodejs/@pulumi/aws/ec2/index.html#SecurityGroup
-[@pulumi/aws]: /reference/pkg/nodejs/@pulumi/aws/index.html
+[EC2 Instance]: {{< relref "/reference/pkg/nodejs/@pulumi/aws/ec2#Instance" >}}
+[Security Group]: {{< relref "/reference/pkg/nodejs/@pulumi/aws/ec2#SecurityGroup" >}}
+[@pulumi/aws]: {{< relref "/reference/pkg/nodejs/@pulumi/aws" >}}
 <!-- End common links -->

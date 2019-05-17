@@ -8,7 +8,7 @@ menu:
     weight: 1
 ---
 
-[Pulumi OpenStack Provider]: ./index.html
+[Pulumi OpenStack Provider]: {{< relref "./" >}}
 [Download your OpenStack credentials]: https://docs.openstack.org/newton/user-guide/common/cli-set-environment-variables-using-openstack-rc.html
 
 The [Pulumi OpenStack Provider] needs to be configured with OpenStack credentials

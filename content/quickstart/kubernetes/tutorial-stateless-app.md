@@ -30,8 +30,8 @@ its full code is [available on GitHub](https://github.com/pulumi/examples/tree/m
 You need to have the Pulumi CLI and a working Kubernetes cluster.
 [Minikube](https://kubernetes.io/docs/getting-started-guides/minikube) is an easy way to get started.
 
-1. [Install Pulumi](../install)
-2. [Connect Pulumi to a Kubernetes Cluster](./setup.html)
+1. [Install Pulumi]({{< relref "../install.md" >}})
+2. [Connect Pulumi to a Kubernetes Cluster]({{< relref "setup.md" >}})
 
 ## Creating and Running the Application
 
@@ -297,4 +297,4 @@ Congratulations! You've created your first Pulumi Kubernetes application.
 The next tutorial entails creating a more full-fledged application that has three Kubernetes Service objects, in
 addition to Deployments, which gives us stable, load balanced IP addresses more suitable for a production application:
 
-* [Guestbook App with Redis and Nginx](./tutorial-guestbook.html)
+* [Guestbook App with Redis and Nginx]({{< relref "tutorial-guestbook.md" >}})

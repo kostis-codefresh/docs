@@ -96,9 +96,9 @@ any SAML 2.0 based identity provider.
 
 We officially support and internally test the following providers:
 
-- [Azure Active Directory](./saml-aad.html)
-- [G Suite](./saml-gsuite.html)
-- [Okta](./saml-okta.html)
+- [Azure Active Directory]({{< relref "saml-aad.md" >}})
+- [G Suite]({{< relref "saml-gsuite.md" >}})
+- [Okta]({{< relref "saml-okta.md" >}})
 
 > If you need help configuring or would like us to officially support another SAML identity provider,
 > please [contact us](https://www.pulumi.com/about/#contact-us).

@@ -40,8 +40,8 @@ After some dependency installations from NPM, you'll see a few files have been g
 
 Let's look at some of those.
 
-- `Pulumi.yaml` defines the [project](/reference/project.html).
-- `Pulumi.ahoy-pulumi-dev.yaml` is the [configuration file](/tour/programs-configuring.html) for the stack we initialized.
+- `Pulumi.yaml` defines the [project]({{< relref "/reference/project.md" >}}).
+- `Pulumi.ahoy-pulumi-dev.yaml` is the [configuration file]({{< relref "/reference/config.md" >}}) for the stack we initialized.
 - `www` contains our sample static content.
 - The key file for defining our stack resources `index.js` so let's examine that.
 
@@ -83,7 +83,7 @@ const endpoint = new awsx.apigateway.API("hello", {
 exports.url = endpoint.url;
 ```
 
-See the [reference documentation](/reference/) for details on the APIs we're using.
+See the [reference documentation]({{< relref "/reference" >}}) for details on the APIs we're using.
 
 ## Deploy the stack
 
@@ -140,11 +140,11 @@ In this example we've seen:
 From here, you can dive deeper:
 
 - Try out additional AWS tutorials:
-  - [Containers](./tutorial-containers-ecs-fargate.html): Create a load-balanced, hosted NGINX container service
-  - [Infrastructure](./tutorial-ec2-webserver.html): Create an EC2-based WebServer and associated infrastructure
+  - [Containers]({{< relref "tutorial-service.md" >}}): Create a load-balanced, hosted NGINX container service
+  - [Infrastructure]({{< relref "tutorial-ec2-webserver.md" >}}): Create an EC2-based WebServer and associated infrastructure
 - Try out some multi-cloud serverless and container tutorials (that also run on AWS):
-  - [Multi-cloud Serverless with Document Database](../cloudfx/tutorial-rest-api.html): Create multi-cloud serverless
+  - [Multi-cloud Serverless with Document Database]({{< relref "../cloudfx/tutorial-rest-api.md" >}}): Create multi-cloud serverless
         REST APIs that use a document database
-  - [Multi-cloud Serverless plus Containers](../cloudfx/tutorial-thumbnailer.html): Create a multi-cloud video
+  - [Multi-cloud Serverless plus Containers]({{< relref "../cloudfx/tutorial-thumbnailer.md" >}}): Create a multi-cloud video
         thumbnail app that uses containers, serverless, and infrastructure together
-- Take [a tour of Pulumi](/tour/index.html).
+- Take [a tour of Pulumi]({{< relref "/tour" >}}).

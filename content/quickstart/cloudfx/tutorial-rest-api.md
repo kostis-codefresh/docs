@@ -6,7 +6,7 @@ menu:
     parent: cloud
 ---
 
-With Pulumi, you can combine infrastructure definitions and application code in one program. The [@pulumi/cloud] library is a set of Pulumi [components](/reference/programming-model.html#components) that provide a higher-level abstraction over AWS. So, instead of provisioning an API Gateway instance, Lambda functions, and setting up IAM roles, you can use [cloud.API] and define application code at the same time as the infrastructure it depends on.
+With Pulumi, you can combine infrastructure definitions and application code in one program. The [@pulumi/cloud] library is a set of Pulumi [components]({{< relref "/reference/programming-model.md#components" >}}) that provide a higher-level abstraction over AWS. So, instead of provisioning an API Gateway instance, Lambda functions, and setting up IAM roles, you can use [cloud.API] and define application code at the same time as the infrastructure it depends on.
 
 In this tutorial, we'll show how to create a simple REST API that counts the number of times a route has been hit. To implement this API, we need a key-value store, an API endpoint, and a Lambda function. 
 
@@ -109,7 +109,7 @@ In this tutorial, we'll show how to create a simple REST API that counts the num
 For an end-to-end application with a frontend, see the [URL shortener sample](https://github.com/pulumi/examples/tree/master/cloud-ts-url-shortener).
 
 <!-- LINKS -->
-[@pulumi/cloud]: ../cloudfx/index.html
-[cloud.API]: /reference/pkg/nodejs/@pulumi/cloud-aws/index.html#API
-[cloud.Table]: /reference/pkg/nodejs/@pulumi/cloud-aws/index.html#Table
+[@pulumi/cloud]: {{< relref "./" >}}
+[cloud.API]: {{< relref "/reference/pkg/nodejs/@pulumi/cloud-aws#API" >}}
+[cloud.Table]: {{< relref "/reference/pkg/nodejs/@pulumi/cloud-aws#Table" >}}
 <!-- END LINKS -->

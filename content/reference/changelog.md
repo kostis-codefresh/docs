@@ -238,7 +238,7 @@ The full changelog is linked below.
 
 Released on November 14, 2018
 
-This release includes significant improvements to Python support in Pulumi.  Python 3.6 or greater is [now required](https://pulumi.io/reference/python.html), and Python users now get support for outputs, parallelism, improved error reporting, and Kubernetes - plus many more new and updated features.
+This release includes significant improvements to Python support in Pulumi.  Python 3.6 or greater is [now required]({{< relref "/reference/python.md" >}}), and Python users now get support for outputs, parallelism, improved error reporting, and Kubernetes - plus many more new and updated features.
 
 As part of this release, we've also started to use `CHANGELOG.md`'s in each repository to track changes between releases. You can read the individual changelogs in GitHub:
 
@@ -446,7 +446,7 @@ Providers are now able to register "ephmeral" update messages which are shown in
 
 #### Local backend
 
-The local backend (which stores your deployment's state file locally, instead of on pulumi.com) has been improved. You can now use `pulumi login --local` or `pulumi login file://<path-to-storage-root>` to select the local backend and control where state files are stored. In addition, older versions of the CLI would behave slightly differently when using the local backend vs pulumi.com, for example, some operations would not show previews before running.  This has been fixed.  When using the local backend, updates print the on disk location of the checkpoint file that was written. The local backend is covered in more detail in (here)[https://pulumi.io/reference/state.html].
+The local backend (which stores your deployment's state file locally, instead of on pulumi.com) has been improved. You can now use `pulumi login --local` or `pulumi login file://<path-to-storage-root>` to select the local backend and control where state files are stored. In addition, older versions of the CLI would behave slightly differently when using the local backend vs pulumi.com, for example, some operations would not show previews before running.  This has been fixed.  When using the local backend, updates print the on disk location of the checkpoint file that was written. The local backend is covered in more detail in (here)[{{< relref "/reference/state.md" >}}].
 
 #### `pulumi refresh`
 
@@ -591,7 +591,7 @@ stack updates and previews as part of pull requests. This allows you to see the 
 merging the code.
 
 The Pulumi GitHub application is still in preview as we work to support more CI systems and provide richer output. For information on how to install the
-GitHub application and configure it with your CI system, please [visit our documentation](https://pulumi.io/reference/cd-github.html) page.
+GitHub application and configure it with your CI system, please [visit our documentation]({{< relref "/reference/cd-github.md" >}}) page.
 
 ### @pulumi/pulumi 0.15.0
 
@@ -624,7 +624,7 @@ Kubernetes support has been brought to production-ready level of quality. Many f
 * Support for provisioning and deploying to clusters in a single program
 * Deploying Helm Charts using the `helm.v2.Chart` type
 
-To use Pulumi with Kubernetes, please [visit our Getting Started page on Kubernetes](/reference/kubernetes.html).
+To use Pulumi with Kubernetes, please [visit our Getting Started page on Kubernetes]({{< relref "/quickstart/kubernetes" >}}).
 
 ### @pulumi/openstack 0.15.0
 
@@ -903,7 +903,7 @@ With the v0.14.0 CLI release, the following packages are now available:
 
 ### @pulumi/aws-serverless v0.14.0
 
-This package is new in this release! Use it to directly manage API Gateway and Lambda resources. See the reference documentation for [@pulumi/aws-serverless](../reference/pkg/nodejs/@pulumi/aws-serverless/index.html).
+This package is new in this release! Use it to directly manage API Gateway and Lambda resources.
 
 ### @pulumi/cloud v0.14.0
 
@@ -915,7 +915,7 @@ This package is new in this release! Use it to directly manage API Gateway and L
 
 ### @pulumi/gcp v0.14.0
 
-This package is new in this release! Use it to deploy and manage resources for Google Cloud Platform. See the reference documentation for  [@pulumi/gcp](../reference/pkg/nodejs/@pulumi/gcp/index.html).
+This package is new in this release! Use it to deploy and manage resources for Google Cloud Platform. See the reference documentation for  [@pulumi/gcp]({{< relref "/reference/pkg/nodejs/@pulumi/gcp" >}}).
 
 ## v0.12.2 {#v122}
 
@@ -939,10 +939,10 @@ With the v0.12.2 CLI release, we have also released the following packages:
 
 #### Added
 
--  Allow passing an existing `Role` to `serverless.Function` ([pulumi/pulumi-aws#210](https://github.com/pulumi/pulumi-aws/pull/210)). [FunctionOptions](../reference/pkg/nodejs/@pulumi/aws/serverless/index.html#FunctionOptions) now includes a `Role` property, for scenarios where you wish to use an existing `Role` or share one across multiple Lambda functions.
+-  Allow passing an existing `Role` to `serverless.Function` ([pulumi/pulumi-aws#210](https://github.com/pulumi/pulumi-aws/pull/210)). FunctionOptions now includes a `Role` property, for scenarios where you wish to use an existing `Role` or share one across multiple Lambda functions.
 
 #### Changed
--  (**Breaking**) Support configuring the paths to include in `serverless.Function` ([pulumi/pulumi-aws#210](https://github.com/pulumi/pulumi-aws/pull/210)). Previously, all files in the directory would be included in the Lambda deployment package. With this change, only the generated `__index.js` and `./node_modules` are included by default. To add other files, use the new `includePaths` property in [FunctionOptions](../reference/pkg/nodejs/@pulumi/aws/serverless/index.html#FunctionOptions).
+-  (**Breaking**) Support configuring the paths to include in `serverless.Function` ([pulumi/pulumi-aws#210](https://github.com/pulumi/pulumi-aws/pull/210)). Previously, all files in the directory would be included in the Lambda deployment package. With this change, only the generated `__index.js` and `./node_modules` are included by default. To add other files, use the new `includePaths` property in FunctionOptions.
 
 -  (**Breaking**) Rename `aws.s3.Bucket#websites` to the singular `aws.s3.Bucket#website`. ([pulumi/pulumi-aws#207](https://github.com/pulumi/pulumi-aws/pull/207)). Since this property contains only one element, it has been renamed to `website` (singular) and is no longer an array property.
 
@@ -952,7 +952,7 @@ Released on May 9, 2018
 
 ### Added
 
--  A new all-in-one installer script is now available at [https://get.pulumi.com](../).
+-  A new all-in-one installer script is now available at [https://get.pulumi.com](https://get.pulumi.com).
 
 -  Many enhancements to `pulumi new` ([pulumi/pulumi#1307](https://github.com/pulumi/pulumi/pull/1307)).  The command now interactively walks through creating everything needed to deploy a new stack, including selecting a template, providing a name, creating a stack, setting default configuration, and installing dependencies.
 
@@ -985,7 +985,7 @@ Released on April 26, 2018
 -  Add a `pulumi cancel` command ([pulumi/pulumi#1230](https://github.com/pulumi/pulumi/pull/1230)). This command cancels any in-progress operation for the current stack.
 
 ### Changed
--  (**Breaking**) Eliminate `pulumi init` requirement ([pulumi/pulumi#1226](https://github.com/pulumi/pulumi/pull/1226)). The `pulumi init` command is no longer required and should not be used for new stacks. For stacks created prior to the v0.12.0 SDK, `pulumi init` should still be run in the project directory if you are connecting to an existing stack. For new projects, stacks will be created under the currently logged in account. After upgrading the CLI, it is necessary to run `pulumi stack select`, as the location of bookkeeping files has been changed. For more information, see [Creating Stacks](../reference/stack.html#create-stack).
+-  (**Breaking**) Eliminate `pulumi init` requirement ([pulumi/pulumi#1226](https://github.com/pulumi/pulumi/pull/1226)). The `pulumi init` command is no longer required and should not be used for new stacks. For stacks created prior to the v0.12.0 SDK, `pulumi init` should still be run in the project directory if you are connecting to an existing stack. For new projects, stacks will be created under the currently logged in account. After upgrading the CLI, it is necessary to run `pulumi stack select`, as the location of bookkeeping files has been changed. For more information, see [Creating Stacks]({{< relref "/reference/stack.md#create-stack" >}}).
 
 -  (**Breaking**) Remove the explicit 'pulumi preview' command ([pulumi/pulumi#1170](https://github.com/pulumi/pulumi/pull/1170)). The `pulumi preview` output has now been merged in to the `pulumi up` command. Before an update is run, the preview is shown and you can choose whether to proceed or see more update details. To see just the preview operation, run `pulumi up --preview`.
 

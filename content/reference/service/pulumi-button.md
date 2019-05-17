@@ -23,7 +23,7 @@ There are two steps to create a button:
 
 The Pulumi button works with template projects hosted in public GitHub repositories or Gists. A template is a Pulumi project that has the required `Pulumi.yaml` file, which describes the project. The template project can be in the root of the GitHub repository or within a subdirectory. Multiple projects can be hosted within subdirectories of a single repository.
 
-The `Pulumi.yaml` file can optionally contain a `template` section, which typically includes a `config` section used to specify any required config values for the project. Each config value can have a `description` and `default` value. Config values can also have a `secret` property, which can be set to `true` to indicate the config value is a [secret](../config.html#secrets).
+The `Pulumi.yaml` file can optionally contain a `template` section, which typically includes a `config` section used to specify any required config values for the project. Each config value can have a `description` and `default` value. Config values can also have a `secret` property, which can be set to `true` to indicate the config value is a [secret]({{< relref "../config.md#secrets" >}}).
 
 ```yaml
 name: my-aws-project
@@ -57,7 +57,7 @@ Browser:
 https://app.pulumi.com/new?template=https://github.com/pulumi/examples/aws-js-s3-folder
 ```
 
-![New Project](../../images/reference/service/new-project.png)
+![New Project](/images/reference/service/new-project.png)
 
 ## Creating a Pulumi Button
 

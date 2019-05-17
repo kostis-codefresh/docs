@@ -12,7 +12,7 @@ A user's permission to access a stack is based first on their role within the co
 organization, and then on any additional permissions granted explicitly to that user.
 
 > Note: This feature is only available on organizations using the Pulumi Team Edition.
-> For more information, see [Organizations](./orgs.html).
+> For more information, see [Organizations]({{< relref "orgs.md" >}}).
 
 ## Organization Roles
 
@@ -27,7 +27,7 @@ role on GitHub will have the `ADMIN` role in the Pulumi organization.
 
 There are three types of permission levels available to users and teams
 collaborating on Pulumi stacks. For information on how to grant stack
-permissions, see [Teams](./teams.html).
+permissions, see [Teams]({{< relref "teams.md" >}}).
 
 - `READ`
 - `WRITE`
@@ -78,7 +78,7 @@ These stack permissions allow users to perform the following actions:
 Pulumi organizations that have been imported from GitHub can be configured by
 organization admins to change way organization members interact with stacks.
 
-![Organization settings](../../images/reference/service/org-settings-card.png)
+![Organization settings](/images/reference/service/org-settings-card.png)
 
 ### Default Stack Permission
 
@@ -91,7 +91,7 @@ any organization member can update any organization stack.
 
 If the default stack permission is `NONE`, then organization members must be
 granted access using teams in order to update, or even view organization
-stacks. (See [Teams](./teams.html) for more information.)
+stacks. (See [Teams]({{< relref "./teams.md" >}}) for more information.)
 
 ### Stack Creation
 

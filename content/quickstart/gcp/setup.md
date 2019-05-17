@@ -8,7 +8,7 @@ menu:
     weight: 1
 ---
 
-[Pulumi Google Cloud Platform Provider]: ./index.html
+[Pulumi Google Cloud Platform Provider]: {{< relref "./" >}}
 
 The [Pulumi Google Cloud Platform Provider] needs to be configured with Google credentials
 before it can be used to create resources.

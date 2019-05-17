@@ -9,7 +9,7 @@ menu:
 ---
 
 <!-- LINKS -->
-[Pulumi Kubernetes provider]: ./index.html
+[Pulumi Kubernetes provider]: {{< relref "./" >}}
 [Kubernetes Go client library]: https://github.com/kubernetes/client-go
 [kubeconfig file]: https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
 [GKE]: https://cloud.google.com/kubernetes-engine/docs/tutorials/

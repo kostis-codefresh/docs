@@ -321,7 +321,7 @@ We can do this by configuring a Pulumi provider for our newly created cluster, a
     will also output incremental status updates, as the Kubernetes changes progress.
 
 	> **Note:** Pulumi auto-generates a suffix for all objects.
-    > See the [Pulumi Programming Model](../../reference/programming-model.md#autonaming) for more info.
+    > See the [Pulumi Programming Model]({{< relref "/reference/programming-model.md#autonaming" >}}) for more info.
 	>
 	> ```
 	> ...
@@ -437,7 +437,7 @@ In this tutorial, we saw how to use Pulumi programs to create and launch a
 Managed Kubernetes cluster on AWS EKS.
 
 For a follow-up example on how to use Pulumi programs to create a Kubernetes
-apps on your new cluster, see [Kubernetes Tutorial: Getting Started With Pulumi](../kubernetes/tutorial-configmap-rollout.html).
+apps on your new cluster, see [Kubernetes Tutorial: Getting Started With Pulumi]({{< relref "../kubernetes/tutorial-configmap-rollout.md" >}}).
 
 We also encourage you to watch Joe Beda, co-founder of Kubernetes and Heptio,
 take Pulumi for a spin in an episode of [TGIK8s](https://github.com/heptio/tgik).

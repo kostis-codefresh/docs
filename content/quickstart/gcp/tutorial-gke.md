@@ -10,7 +10,7 @@ In this tutorial, we'll launch a new Managed Kubernetes cluster in Google Kubern
 
 ## Prerequisites
 
-1. [Install Pulumi](https://pulumi.io/install)
+1. [Install Pulumi]({{< relref "../install.md" >}})
 1. [Install Node.js version 6 or later](https://nodejs.org/en/download/)
 1. Install a package manager for Node.js, such as [npm](https://www.npmjs.com/get-npm) or [Yarn](https://yarnpkg.com/en/docs/install).
 1. [Install Google Cloud SDK (`gcloud`)](https://cloud.google.com/sdk/docs/downloads-interactive)
@@ -42,11 +42,11 @@ In this tutorial, we'll launch a new Managed Kubernetes cluster in Google Kubern
 
     * Enter in a Pulumi project name, and description to detail what this
       Pulumi program does
-    * Enter in a name for the [Pulumi stack](https://pulumi.io/reference/stack.html), which is an instance of our Pulumi program, and is used to distinguish amongst different development phases and environments of your work streams.
+    * Enter in a name for the [Pulumi stack]({{< relref "/reference/stack.md" >}}), which is an instance of our Pulumi program, and is used to distinguish amongst different development phases and environments of your work streams.
 
 1. Add the required dependencies:
 
-    This installs the dependent packages [needed](https://pulumi.io/reference/how.html) for our Pulumi program.
+    This installs the dependent packages [needed]({{< relref "/reference/how.md" >}}) for our Pulumi program.
 
 	```bash
 	npm install --save @pulumi/pulumi @pulumi/gcp @pulumi/kubernetes
@@ -273,7 +273,7 @@ We can do this by configuring a Pulumi provider for our newly created cluster, a
     also output incremental status updates, as the Kubernetes changes progress.
 
 	> **Note:** Pulumi auto-generates a suffix for all objects.
-    > See the [Pulumi Programming Model](../../reference/programming-model.md#autonaming) for more info.
+    > See the [Pulumi Programming Model]({{< relref "/reference/programming-model.md#autonaming" >}}) for more info.
     >
     > ```
     > ...
@@ -394,7 +394,7 @@ In this tutorial, we saw how to use Pulumi programs to create and launch a
 Managed Kubernetes cluster on GCP GKE.
 
 For a follow-up example on how to use Pulumi programs to create a Kubernetes
-apps on your new cluster, see [Kubernetes Tutorial: Getting Started With Pulumi](../kubernetes/tutorial-configmap-rollout.html).
+apps on your new cluster, see [Kubernetes Tutorial: Getting Started With Pulumi]({{< relref "../kubernetes/tutorial-configmap-rollout.md" >}}).
 
 We also encourage you to watch Joe Beda, co-founder of Kubernetes and Heptio,
 take Pulumi for a spin in an episode of [TGIK8s](https://github.com/heptio/tgik).
