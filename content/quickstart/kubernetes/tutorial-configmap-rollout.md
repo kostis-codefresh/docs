@@ -41,7 +41,7 @@ code when we modify it later.
 
 This application will:
 
--   Create a container running [nginx] (an open source web server).
+-   Create a container running [nginx](https://nginx.org/) (an open source web server).
 -   Create a `ConfigMap` with an configuration file that configures nginx to proxy traffic to
     `pulumi.github.io`.
 -   Mount that configuration data into the nginx container.
@@ -207,7 +207,7 @@ Once we're confident this is what we want, we can run the update:
 
     The output should look something like this.
 
-    ![configmapRollout](/images/quickstart/kubernetes/cm-rollout.gif "ConfigMap-induced Rollout")
+    ![configmapRollout](/images/quickstart/kubernetes/cm-rollout.gif)
 
 2. **Verify the rollout worked.** You can do this by pasting the URL into the browser (be sure to
    disable the cache), or by running the following:
@@ -225,7 +225,6 @@ pulumi destroy
 ```
 
 [ts]: https://www.typescriptlang.org/
-[nginx]: https://nginx.org/
 [nodejs]: https://nodejs.org/en/
 [npm]: https://www.npmjs.com/get-npm
 [yarn]: https://yarnpkg.com/en/docs/install

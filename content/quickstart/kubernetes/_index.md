@@ -114,7 +114,7 @@ clouds, so there is not a common "Prerequisites" section, except what you've alr
 Pulumi.
 
 -   **[Advanced Pulumi user]** [Standing up an AKS cluster, Mongo-flavored CosmosDB, and a Helm
-    Chart that uses it for persistent data storage.](./tutorial-p8s-rollout.html) This tutorial is
+    Chart that uses it for persistent data storage.]({{< relref "tutorial-p8s-rollout.md" >}}) This tutorial is
     similar in flavor to the lifecycle tutorial, except rollouts are staged, gated on Prometheus
     health checks. This allows us to roll out to a small canary ring, check Prometheus metrics, and
     then roll out to a larger prod ring only when that succeeds.
