@@ -2,6 +2,10 @@
 title: "Pulumi GitHub Actions"
 aliases:
     - /github/
+menu:
+  reference:
+    parent: cd
+    weight: 4
 ---
 
 <style>

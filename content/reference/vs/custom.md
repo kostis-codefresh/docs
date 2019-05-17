@@ -1,5 +1,10 @@
 ---
 title: Pulumi vs. Custom Solutions
+menu:
+  reference:
+    parent: vs
+    name: Custom Solutions
+    weight: 7
 ---
 
 Many organizations start out by manually managing their infrastructure. This often begins by pointing and clicking in

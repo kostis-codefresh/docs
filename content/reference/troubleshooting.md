@@ -1,5 +1,8 @@
 ---
 title: Troubleshooting & Support
+menu:
+  reference:
+    weight: 12
 ---
 
 {{< mini-toc >}}

@@ -1,6 +1,9 @@
 ---
 title: "Changelog"
 redirect_from: /install/changelog.html
+menu:
+  reference:
+    weight: 11
 ---
 
 <!-- Common links -->

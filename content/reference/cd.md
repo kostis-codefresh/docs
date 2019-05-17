@@ -1,5 +1,9 @@
 ---
 title: Continuous Delivery
+menu:
+  reference:
+    identifier: cd
+    weight: 5
 ---
 
 Pulumi is great for continuous deployment and supports a range of workflows.  In fact, our team uses Pulumi

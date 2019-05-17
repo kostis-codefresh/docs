@@ -2,7 +2,10 @@
 title: "Node.js"
 redirect_from: "npm-packages.html"
 redirect_from: "install/configure-npm.html"
-
+menu:
+  reference:
+    parent: languages
+    weight: 1
 ---
 
 Pulumi supports JavaScript programs running on Node.js.

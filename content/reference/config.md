@@ -1,5 +1,9 @@
 ---
 title: "Configuration and Secrets"
+menu:
+  reference:
+    parent: concepts
+    weight: 4
 ---
 
 {{< mini-toc >}}

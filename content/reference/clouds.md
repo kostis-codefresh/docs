@@ -1,6 +1,10 @@
 ---
 title: Supported Clouds
 redirect_from: "/quickstart/clouds.html"
+menu:
+  reference:
+    identifier: clouds
+    weight: 6
 ---
 
 Pulumi supports many clouds using the same languages, CLI, and deployment workflow. Tutorials are available below.

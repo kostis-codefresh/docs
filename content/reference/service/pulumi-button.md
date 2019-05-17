@@ -1,5 +1,9 @@
 ---
 title: Creating a 'Deploy with Pulumi' Button
+menu:
+  reference:
+    parent: teams
+    weight: 6
 ---
 
 The 'Deploy with Pulumi' button provides a way to easily create new Pulumi projects within a web browser. The button can be embedded in README files in GitHub repositories/Gists, blog posts, or other web pages.

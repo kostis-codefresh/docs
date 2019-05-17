@@ -1,5 +1,9 @@
 ---
 title: "Stacks"
+menu:
+  reference:
+    parent: concepts
+    weight: 3
 ---
 
 Every Pulumi program is deployed to a **stack**.  A stack is an isolated, independently configurable

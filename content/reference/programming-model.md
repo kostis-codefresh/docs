@@ -1,5 +1,9 @@
 ---
 title: "Programming Model"
+menu:
+  reference:
+    parent: concepts
+    weight: 1
 ---
 
 {{< mini-toc >}}

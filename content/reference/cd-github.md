@@ -1,5 +1,9 @@
 ---
 title: Pulumi GitHub App
+menu:
+  reference:
+    parent: teams
+    weight: 4
 ---
 
 <style>

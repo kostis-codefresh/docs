@@ -1,5 +1,9 @@
 ---
 title: Supported Languages
+menu:
+  reference:
+    identifier: languages
+    weight: 7
 ---
 
 Pulumi is a multi-language runtime. Your choice of language does not affect which [clouds](clouds.html) may be

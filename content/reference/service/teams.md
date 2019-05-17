@@ -1,6 +1,11 @@
 ---
 title: Teams
 redirect_from: "/reference/service/collaboration.html"
+menu:
+  reference:
+    parent: teams
+    identifier: teams-teams
+    weight: 2
 ---
 
 The Pulumi Cloud Console offers role-based access control using teams.

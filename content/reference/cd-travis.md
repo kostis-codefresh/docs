@@ -1,5 +1,9 @@
 ---
 title: Travis CI
+menu:
+  reference:
+    parent: cd
+    weight: 7
 ---
 
 This page details how to use [Travis CI](https://travis-ci.com/) to manage deploying

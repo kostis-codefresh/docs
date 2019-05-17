@@ -1,5 +1,9 @@
 ---
 title: "Command Line"
+menu:
+  reference:
+    identifier: cli
+    weight: 3
 ---
 
 {{< mini-toc >}}

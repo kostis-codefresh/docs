@@ -1,5 +1,9 @@
 ---
 title: Organizing Projects and Stacks
+menu:
+  reference:
+    parent: concepts
+    weight: 5
 ---
 
 [Projects](./project.html) and [stacks](./stack.html) are intentionally flexible so that they can accommodate

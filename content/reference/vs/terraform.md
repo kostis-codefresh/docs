@@ -1,6 +1,11 @@
 ---
 title: Pulumi vs. Terraform
 redirect_from: /reference/terraform.html
+menu:
+  reference:
+    parent: vs
+    name: Terraform
+    weight: 1
 ---
 
 Terraform is the closest comparison to Pulumi. In Terraform, you write programs in a custom

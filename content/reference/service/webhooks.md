@@ -1,5 +1,9 @@
 ---
 title: Pulumi Webhooks
+menu:
+  reference:
+    parent: teams
+    weight: 5
 ---
 
 Webhooks allow you to build applications that will be notified when events

@@ -1,5 +1,9 @@
 ---
 title: State and Backends
+menu:
+  reference:
+    parent: concepts
+    weight: 7
 ---
 
 Pulumi stores its own copy of the current state of your infrastructure. This is often simply called _state_, and is

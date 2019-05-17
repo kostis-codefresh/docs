@@ -1,5 +1,9 @@
 ---
 title: API Reference
+menu:
+  reference:
+    identifier: api
+    weight: 9
 ---
 
 {{< mini-toc >}}

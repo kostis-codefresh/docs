@@ -1,6 +1,10 @@
 ---
 title: Organizations
 redirect_from: "/reference/service/editions.html"
+menu:
+  reference:
+    parent: teams
+    weight: 1
 ---
 
 There are several editions of the Pulumi Cloud Console available, each offering an expanding set

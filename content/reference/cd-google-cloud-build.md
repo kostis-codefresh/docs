@@ -1,5 +1,9 @@
 ---
 title: Google Cloud Build
+menu:
+  reference:
+    parent: cd
+    weight: 6
 ---
 
 ## Prerequisites

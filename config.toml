@@ -12,3 +12,81 @@ sectionPagesMenu = "main"
 [params]
     repositoryURL = "https://github.com/pulumi/docs"
     repositoryBranch = "master"
+
+[[menu.reference]]
+    name = "Cancel"
+    parent = "cli"
+    url = "/reference/cli/pulumi_cancel/"
+    weight = 1
+
+[[menu.reference]]
+    name = "Config"
+    parent = "cli"
+    url = "/reference/cli/pulumi_config/"
+    weight = 2
+
+[[menu.reference]]
+    name = "Destroy"
+    parent = "cli"
+    url = "/reference/cli/pulumi_destroy/"
+    weight = 3
+
+[[menu.reference]]
+    name = "Login"
+    parent = "cli"
+    url = "/reference/cli/pulumi_login/"
+    weight = 4
+
+[[menu.reference]]
+    name = "Logout"
+    parent = "cli"
+    url = "/reference/cli/pulumi_logout/"
+    weight = 5
+
+[[menu.reference]]
+    name = "Logs"
+    parent = "cli"
+    url = "/reference/cli/pulumi_logs/"
+    weight = 5
+
+[[menu.reference]]
+    name = "New"
+    parent = "cli"
+    url = "/reference/cli/pulumi_new/"
+    weight = 6
+
+[[menu.reference]]
+    name = "Plugin"
+    parent = "cli"
+    url = "/reference/cli/pulumi_plugin/"
+    weight = 7
+
+[[menu.reference]]
+    name = "Preview"
+    parent = "cli"
+    url = "/reference/cli/pulumi_preview/"
+    weight = 8
+
+[[menu.reference]]
+    name = "Refresh"
+    parent = "cli"
+    url = "/reference/cli/pulumi_refresh/"
+    weight = 9
+
+[[menu.reference]]
+    name = "Stack"
+    parent = "cli"
+    url = "/reference/cli/pulumi_stack/"
+    weight = 10
+
+[[menu.reference]]
+    name = "State"
+    parent = "cli"
+    url = "/reference/cli/pulumi_state/"
+    weight = 11
+
+[[menu.reference]]
+    name = "Update"
+    parent = "cli"
+    url = "/reference/cli/pulumi_up/"
+    weight = 11

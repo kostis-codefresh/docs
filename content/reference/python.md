@@ -1,5 +1,9 @@
 ---
 title: "Python"
+menu:
+  reference:
+    parent: languages
+    weight: 2
 ---
 
 Pulumi supports programs written in Python 3.
