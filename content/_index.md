@@ -1,4 +1,5 @@
 ---
+noindex: true
 ---
 
 <div class="card-table" style="margin-top: 24px">

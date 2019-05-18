@@ -1,3 +1,4 @@
 ---
-type: search-page
+layout: search
+noindex: true
 ---

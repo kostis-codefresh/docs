@@ -1,0 +1,10 @@
+{
+{{- $pages := (where .Site.Pages ".Params.noindex" "ne" true) -}}
+{{- $lastindex := (sub (len $pages) 1) -}}
+{{ range $index, $page := $pages }}
+    "{{ .RelPermalink }}": {
+        "title": {{ .Title | jsonify }},
+        "content": {{ .Plain | jsonify }}
+    }{{ if ne $lastindex $index }},{{ end }}
+{{ end }}
+}
