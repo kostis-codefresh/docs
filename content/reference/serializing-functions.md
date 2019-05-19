@@ -10,7 +10,7 @@ Pulumi makes this easy by allowing JavaScript callbacks written in a Pulumi prog
 
 For the purposes of this walkthrough, and for the examples, AWS-Lambda will be assumed.  But this information equally applies to all Cloud providers.  In a similar vein, TypeScript will be used to help provide type annotation for clarity.  However, TypeScript is not required, and all functionality is exposed entirely to JavaScript.  The API that exposes this functionality for AWS can be found in @pulumi/aws-serverless and can be accessed directly like so:
 
-```ts
+```typescript
 import * as aws from "@pulumi/aws";
 import * as serverless from "@pulumi/aws-serverless";
 
@@ -23,7 +23,7 @@ const lambda: aws.lambda.Function = serverless.function.createLambdaFunction("my
 
 There are also many indirect ways this API is used.  Many Pulumi SDK APIs allow JavaScript functions to be passed that will be used to define the Lambda that will end up responsible for the code at 'run time'.  These APIs normally provide a strongly-typed definition that helps TypeScript users ensure their JavaScript functions are properly typed and will execute properly at 'run time'.  For example:
 
-```ts
+```typescript
 import * as aws from "@pulumi/aws";
 import * as serverless from "@pulumi/aws-serverless";
 
@@ -45,7 +45,7 @@ This functionality provides a powerful and convenient way to create your Lambdas
 
 At a high-level, creating a Lambda out of a JavaScript function involves several conceptual phases and transformation steps.  The first step is determining all the functions used by the function that is being converted.  For example, if the code were:
 
-```ts
+```typescript
 const lambda: aws.lambda.Function = serverless.function.createLambdaFunction("mylambda", 
     (input: MyInputType) => {
         foo(input);
@@ -74,7 +74,7 @@ All functions that are needed for 'run time' execution will then be included in 
 
 For most functions, the code of the function can simply be included practically 'as is' in the code file for the Lambda.  The important exception to this are functions that 'capture' values defined outside of the function itself.  For example:
 
-```ts
+```typescript
 const obj1 = { a: 1, b: 2 };
 const obj2 = new aws.s3.Bucket("mybucket", { serverSideEncryptionConfiguration: /*...*/ });
 const obj3 = SomeFunction();
@@ -105,7 +105,7 @@ Notes:
 
 Pulumi will attempt to reduce the size of a serialized object by removing parts of it that it can prove are not used in a program.  For example:
 
-```ts
+```typescript
 const obj = { foo() { console.log("foo called"); } bar() { console.log("bar called") } };
 
 const lambda: aws.lambda.Function = serverless.function.createLambdaFunction("mylambda", 
@@ -116,7 +116,7 @@ const lambda: aws.lambda.Function = serverless.function.createLambdaFunction("my
 
 In this code, only the 'foo' property is used from 'obj'.  So Pulumi will serialize a value equivalent to `{ foo() { console.log("foo called"); } }`.  However, if the code were:
 
-```ts
+```typescript
 const obj = { foo() { console.log("foo called"); this.bar(); } bar() { console.log("bar called") } };
 
 const lambda: aws.lambda.Function = serverless.function.createLambdaFunction("mylambda", 
@@ -131,7 +131,7 @@ Then this would need to serialize the entire object value (because 'bar' itself 
 
 Capturing of most JavaScript values normally works by serializing the entire object graph to produce a representation which can then be rehydated into a replica instance.  However, this process works differently when the value being dealt with is a JavaScript module.  For example, consider the following code:
 
-```ts
+```typescript
 import * as fs from "fs";
 
 const lambda: aws.lambda.Function = serverless.function.createLambdaFunction("mylambda", 
@@ -169,7 +169,7 @@ For this reason, it is highly recommended that code not capture values which are
 
 To see the problems this avoids in practice, consider the following two programs:
 
-```ts
+```typescript
 let obj = { a: 1, b: 2 };
 
 const lambda: aws.lambda.Function = serverless.function.createLambdaFunction("mylambda", 
@@ -181,7 +181,7 @@ obj = { a: 3, b: 4 };
 ```
 
 
-```ts
+```typescript
 let obj = { a: 1, b: 2 };
 obj = { a: 3, b: 4 };
 
@@ -198,7 +198,7 @@ Notes:
 
 So, in the following code:
 
-```ts
+```typescript
 let obj = { a: 1, b: 2 };
 let pr = new Promise((resolve, reject) => { /*...*/ });
 
@@ -217,7 +217,7 @@ it may be the case that the value `{ a: 1, b: 2}` or `{ a: 3, b: 4}` is serializ
 
 By default, Pulumi will generate a Cloud Lambda for a given JavaScript function with reasonable defaults for many configurable properties.  For example, values are picked to define the default roles and permissions for the Lambda, the timeout it should have, how much memory it can use, which version of the Node runtime to use, and so on and so forth.  If these defaults are not desirable, any or all of them can be overridden by supplying desired values.  For example:
 
-```ts
+```typescript
 // Only let this Lambda run for a minute before forcefully terminating it.
 const options: serverless.function.FunctionOptions = { timeout: 60 };
 
@@ -230,7 +230,7 @@ const lambda: aws.lambda.Function = serverless.function.createLambdaFunction("my
 
 When calling APIs that allow callbacks to be passed in, customization can be provided like so:
 
-```ts
+```typescript
 // Only let this Lambda run for a minute before forcefully terminating it.
 const options: serverless.function.FunctionOptions = { timeout: 60 };
 

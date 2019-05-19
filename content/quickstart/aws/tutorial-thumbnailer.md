@@ -30,7 +30,7 @@ and a video walkthrough of this example is [available on YouTube](https://www.yo
 
 1.  Replace the contents of `index.ts` with the following:
 
-    ```ts
+    ```typescript
     import * as aws from "@pulumi/aws";
     import * as awsx from "@pulumi/aws-infra";
 
