@@ -28,7 +28,7 @@ In this tutorial, we'll use TypeScript to build and deploy a simple container us
 
 1.  Replace the contents of `index.ts` with the following:
 
-    ```ts
+    ```typescript
     import * as pulumi from "@pulumi/pulumi";
     import * as aws from "@pulumi/aws";
     import * as awsx from "@pulumi/awsx";
