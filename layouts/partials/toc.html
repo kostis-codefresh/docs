@@ -1,4 +1,3 @@
-
 {{ $menu := .Site.Menus.main }}
 {{ if hasPrefix .RelPermalink "/quickstart/" }}
     {{ $menu = .Site.Menus.quickstart }}
@@ -12,56 +11,42 @@
 
 {{ if $menu }}
 <div class="toc">
-    {{ $currentPage := . }}
-    {{ $len := (len $menu) }}
-    {{ range $index, $element := $menu }}
-        {{ $isLast := eq (add $index 1) $len }}
+    {{ $page := . }}
+    {{ $lastindex := (sub (len $menu) 1) }}
 
-        {{ $sidenav_expanded := false }}
+    {{ range $index, $element := $menu }}
+        {{ $toggle_state := "toggle" }}
         {{ $sidenav_selected := "" }}
 
-        {{ if eq $currentPage.RelPermalink .URL }}
-            {{ $sidenav_expanded = true }}
-            {{ $sidenav_selected = "sidenav-selected" }}
-        {{ else if hasPrefix $currentPage.RelPermalink .URL }}
-            {{ $sidenav_expanded = true }}
-        {{ end }}
-
-        {{/*
-            If the page has an explicitly set `expanded_url` param, use it when
-            determining whether the sidenav should be expanded.
-        */}}
-        {{ if eq $currentPage.Params.expanded_url .URL }}
-            {{ $sidenav_expanded = true }}
-        {{ end }}
-
-        {{ $toggle_state := "toggleVisible" }}
-        {{ if $sidenav_expanded }}
+        {{ if eq $page.RelPermalink .URL }}
             {{ $toggle_state = "toggleVisible" }}
-        {{ else }}
-            {{ $toggle_state = "toggle" }}
+            {{ $sidenav_selected = "sidenav-selected" }}
+        {{ else if eq $page.Params.expanded_url .URL }}
+            {{ $toggle_state = "toggleVisible" }}
+        {{ else if hasPrefix $page.RelPermalink .URL }}
+            {{ $toggle_state = "toggleVisible" }}
         {{ end }}
 
-        <div class="sidenav-section toggleVisible {{ if (not $isLast) }}separator{{ end }}">
+        <div class="sidenav-section toggleVisible{{ if ne $lastindex $index }} separator{{ end }}">
             <div class="{{ $toggle_state }}" data-title="{{ .Name }}">
                 <div class="collapsed">
                     <div class="sidenav-topic {{ $sidenav_selected }}">
                         <a data-title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
-                        {{ if .HasChildren }}
-                            <span class="toggleButton">▹</span>
-                        {{ end }}
+                        {{- if .HasChildren -}}
+                            &nbsp;<span class="toggleButton">▹</span>
+                        {{- end -}}
                     </div>
                 </div>
                 <div class="expanded">
                     <div class="sidenav-topic {{ $sidenav_selected }}">
                         <a data-title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
-                        {{ if .HasChildren }}
-                            <span class="toggleButton">▾</span>
-                        {{ end }}
+                        {{- if .HasChildren -}}
+                            &nbsp;<span class="toggleButton">▾</span>
+                        {{- end -}}
                     </div>
                     {{ if .HasChildren }}
                         <div class="sidenav-subsection">
-                            {{ template "tocsub" (dict "page" $currentPage "menu" . "prefix_selection" false) }}
+                            {{ template "tocsub" (dict "page" $page "menu" . "prefix_selection" false) }}
                         </div>
                     {{ end }}
                 </div>
@@ -77,16 +62,7 @@
 
     {{ range .menu.Children }}
         {{ $sidenav_selected := "" }}
-        {{ if eq $page.RelPermalink .URL }}
-            {{ $sidenav_selected = "sidenav-selected" }}
-        {{ end }}
-
-        {{/*
-            When `$prefix_selection` is `true` and $page.RelPermalink is equal to
-            the menu's URL, select the menu. This allows a package's menu to remain
-            selected when viewing one of its modules in the API Reference.
-        */}}
-        {{ if and $prefix_selection (hasPrefix $page.RelPermalink .URL) }}
+        {{ if or (eq $page.RelPermalink .URL) (and $prefix_selection (hasPrefix $page.RelPermalink .URL)) }}
             {{ $sidenav_selected = "sidenav-selected" }}
         {{ end }}
 
