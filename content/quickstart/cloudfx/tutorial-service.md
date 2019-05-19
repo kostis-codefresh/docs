@@ -28,7 +28,7 @@ In this tutorial, we'll use JavaScript to build and deploy a simple container us
 
 1.  Replace the contents of `index.js` with the following:
 
-    ```js
+    ```javascript
     const cloud = require("@pulumi/cloud");
 
     let service = new cloud.Service("pulumi-nginx", {

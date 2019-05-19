@@ -56,7 +56,7 @@ To start, we'll need to create a project and stack (a deployment target) for our
 
 2.  Next, replace the minimal contents of the template's `index.ts` file with the full guestbook:
 
-    ```js
+    ```javascript
     import * as k8s from "@pulumi/kubernetes";
     import * as pulumi from "@pulumi/pulumi";
 

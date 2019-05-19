@@ -31,7 +31,7 @@ and a video walkthrough of this example is [available on YouTube](https://www.yo
 
 1.  Replace the contents of `index.js` with the following:
 
-    ```js
+    ```javascript
     const cloud = require("@pulumi/cloud-aws");
 
     // A bucket to store videos and thumbnails.

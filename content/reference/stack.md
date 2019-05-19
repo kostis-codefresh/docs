@@ -90,7 +90,7 @@ Use `pulumi stack select` to change stack; `pulumi stack ls` lists known ones
 When you use top-level exports in your Pulumi [program]({{< relref "programming-model.md#programs" >}}), they become [stack outputs]({{< relref "programming-model.md#stack-outputs" >}}). Stack outputs can be viewed via `pulumi stack output` and are shown on the stack information page on pulumi.com.
 
 **JavaScript code**
-```js
+```javascript
 exports.publicDns = ...
 exports.publicIp  = ...
 ```
