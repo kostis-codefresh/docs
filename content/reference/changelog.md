@@ -915,7 +915,7 @@ This package is new in this release! Use it to directly manage API Gateway and L
 
 ### @pulumi/gcp v0.14.0
 
-This package is new in this release! Use it to deploy and manage resources for Google Cloud Platform. See the reference documentation for  [@pulumi/gcp]({{< relref "/reference/pkg/nodejs/@pulumi/gcp" >}}).
+This package is new in this release! Use it to deploy and manage resources for Google Cloud Platform. See the reference documentation for  [@pulumi/gcp]({{< relref "/reference/pkg/nodejs/pulumi/gcp" >}}).
 
 ## v0.12.2 {#v122}
 

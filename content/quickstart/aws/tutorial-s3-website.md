@@ -191,17 +191,17 @@ The full source of the example is available in the [Pulumi examples repo](https:
 To learn how to convert the raw AWS option to a high-level component, see the [Pulumi Components]({{< relref "/reference/component-tutorial.md" >}}) tutorial.
 
 <!-- Common links -->
-[@pulumi/aws]: {{< relref "/reference/pkg/nodejs/@pulumi/aws" >}}
-[aws.s3.Bucket]: {{< relref "/reference/pkg/nodejs/@pulumi/aws/s3#Bucket" >}}
-[aws.s3.Bucket.bucket]: {{< relref "/reference/pkg/nodejs/@pulumi/aws/s3#Bucket" >}}
-[aws.s3.BucketObject]: {{< relref "/reference/pkg/nodejs/@pulumi/aws/s3#BucketObject" >}}
-[pulumi.asset.FileAsset]: {{< relref "/reference/pkg/nodejs/@pulumi/pulumi/asset#FileAsset" >}}
-[aws.s3.BucketPolicy]: {{< relref "/reference/pkg/nodejs/@pulumi/aws/s3#BucketPolicy" >}}
-[aws.s3.Bucket.websites]: {{< relref "/reference/pkg/nodejs/@pulumi/aws/s3#Bucket" >}}
-[pulumi.Output]: {{< relref "/reference/pkg/nodejs/@pulumi/pulumi#Output" >}}
-[pulumi.Output.apply]: {{< relref "/reference/pkg/nodejs/@pulumi/pulumi#Output" >}}
-[pulumi.Input]: {{< relref "/reference/pkg/nodejs/@pulumi/pulumi#Input" >}}
-[pulumi.ComponentResource]: {{< relref "/reference/pkg/nodejs/@pulumi/pulumi#ComponentResource" >}}
+[@pulumi/aws]: {{< relref "/reference/pkg/nodejs/pulumi/aws" >}}
+[aws.s3.Bucket]: {{< relref "/reference/pkg/nodejs/pulumi/aws/s3#Bucket" >}}
+[aws.s3.Bucket.bucket]: {{< relref "/reference/pkg/nodejs/pulumi/aws/s3#Bucket" >}}
+[aws.s3.BucketObject]: {{< relref "/reference/pkg/nodejs/pulumi/aws/s3#BucketObject" >}}
+[pulumi.asset.FileAsset]: {{< relref "/reference/pkg/nodejs/pulumi/pulumi/asset#FileAsset" >}}
+[aws.s3.BucketPolicy]: {{< relref "/reference/pkg/nodejs/pulumi/aws/s3#BucketPolicy" >}}
+[aws.s3.Bucket.websites]: {{< relref "/reference/pkg/nodejs/pulumi/aws/s3#Bucket" >}}
+[pulumi.Output]: {{< relref "/reference/pkg/nodejs/pulumi/pulumi#Output" >}}
+[pulumi.Output.apply]: {{< relref "/reference/pkg/nodejs/pulumi/pulumi#Output" >}}
+[pulumi.Input]: {{< relref "/reference/pkg/nodejs/pulumi/pulumi#Input" >}}
+[pulumi.ComponentResource]: {{< relref "/reference/pkg/nodejs/pulumi/pulumi#ComponentResource" >}}
 [Component]: {{< relref "/reference/programming-model#components" >}}
 [s3-folder]: https://github.com/pulumi/examples/tree/master/aws-js-s3-folder
 [s3-folder-component]: https://github.com/pulumi/examples/tree/master/aws-js-s3-folder-component

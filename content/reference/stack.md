@@ -57,7 +57,7 @@ test                                      2 weeks ago              121
 
 To deploy your project to the currently selected stack, run `pulumi up`. The operation uses the latest [configuration values]({{< relref "config.md" >}}) for the active stack.
 
-> **Note:** Your stack can distinguish between execution for preview versus for update by using [pulumi.runtime.isDryRun()]({{< relref "/reference/pkg/nodejs/@pulumi/pulumi/runtime#isDryRun" >}}).
+> **Note:** Your stack can distinguish between execution for preview versus for update by using [pulumi.runtime.isDryRun()]({{< relref "/reference/pkg/nodejs/pulumi/pulumi/runtime#isDryRun" >}}).
 
 ## View stack resources
 

@@ -202,7 +202,7 @@ In this tutorial, we saw how to use Pulumi programs to create and manage cloud r
 For a similar example in other languages and clouds, see the [Web Server examples collection](https://github.com/pulumi/examples#web-server).
 
 <!-- Common links -->
-[EC2 Instance]: {{< relref "/reference/pkg/nodejs/@pulumi/aws/ec2#Instance" >}}
-[Security Group]: {{< relref "/reference/pkg/nodejs/@pulumi/aws/ec2#SecurityGroup" >}}
-[@pulumi/aws]: {{< relref "/reference/pkg/nodejs/@pulumi/aws" >}}
+[EC2 Instance]: {{< relref "/reference/pkg/nodejs/pulumi/aws/ec2#Instance" >}}
+[Security Group]: {{< relref "/reference/pkg/nodejs/pulumi/aws/ec2#SecurityGroup" >}}
+[@pulumi/aws]: {{< relref "/reference/pkg/nodejs/pulumi/aws" >}}
 <!-- End common links -->

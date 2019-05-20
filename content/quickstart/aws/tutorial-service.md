@@ -8,7 +8,7 @@ menu:
     parent: aws
 ---
 
-In this tutorial, we'll use TypeScript to build and deploy a simple container using the [`@pulumi/aws`]({{< relref "/reference/pkg/nodejs/@pulumi/aws" >}}) and [`@pulumi/awsx`]({{< relref "/reference/pkg/nodejs/@pulumi/awsx" >}}) frameworks.  This example can be deployed to AWS on either Fargate, and can be simply updated to use ECS as well.  The [code for this tutorial](https://github.com/pulumi/examples/tree/master/aws-ts-containers) is available on GitHub.
+In this tutorial, we'll use TypeScript to build and deploy a simple container using the [`@pulumi/aws`]({{< relref "/reference/pkg/nodejs/pulumi/aws" >}}) and [`@pulumi/awsx`]({{< relref "/reference/pkg/nodejs/pulumi/awsx" >}}) frameworks.  This example can be deployed to AWS on either Fargate, and can be simply updated to use ECS as well.  The [code for this tutorial](https://github.com/pulumi/examples/tree/master/aws-ts-containers) is available on GitHub.
 
 ## Prerequisites
 

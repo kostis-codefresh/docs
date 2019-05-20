@@ -128,6 +128,6 @@ runtime:
 ```
 
 <!-- LINKS -->
-[`pulumi.Config`]: {{< relref "/reference/pkg/nodejs/@pulumi/pulumi#Config" >}}
+[`pulumi.Config`]: {{< relref "/reference/pkg/nodejs/pulumi/pulumi#Config" >}}
 [Using configuration values in JavaScript]: {{< relref "config.md#javascript" >}}
 <!-- END LINKS -->

@@ -19,7 +19,7 @@ designed to fit in anywhere you already use Kubernetes:
 
 -   **API-compatible with Kubernetes** -- users do not have to learn a new API to write Kubernetes
     applications with Pulumi. (See the [Kubernetes][api-reference] and
-    [Pulumi]({{< relref "/reference/pkg/nodejs/@pulumi/kubernetes" >}}) API documentation for more
+    [Pulumi]({{< relref "/reference/pkg/nodejs/pulumi/kubernetes" >}}) API documentation for more
     details.)
 
 -   **Compatible with Kubernetes YAML and Helm Charts.** For example:

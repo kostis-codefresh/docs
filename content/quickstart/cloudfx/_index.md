@@ -13,9 +13,9 @@ The Cloud framework for Pulumi lets you program infrastructure and application l
 
 The Cloud framework must be configured with credentials to deploy and update resources in the target cloud platform.
 
-See the [full API documentation]({{< relref "/reference/pkg/nodejs/@pulumi/cloud" >}}) for complete details of the available Cloud framework APIs.
+See the [full API documentation]({{< relref "/reference/pkg/nodejs/pulumi/cloud" >}}) for complete details of the available Cloud framework APIs.
 
-For AWS-specific use cases, see also the [awsx]({{< relref "/reference/pkg/nodejs/@pulumi/awsx" >}}) library which provides higher-level libraries for working with many AWS services.
+For AWS-specific use cases, see also the [awsx]({{< relref "/reference/pkg/nodejs/pulumi/awsx" >}}) library which provides higher-level libraries for working with many AWS services.
 
 ## Getting Started
 

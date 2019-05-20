@@ -181,7 +181,7 @@ Resource inputs have type [`Input`][pulumi.Input], which accepts either a raw va
 
 ##### Apply {#apply}
 
-To transform an output into a new value, use the [`apply` method]({{< relref "pkg/nodejs/@pulumi/pulumi#property-apply" >}}). For example, use the following to create an HTTPS URL from the DNS name of a virtual machine: 
+To transform an output into a new value, use the [`apply` method]({{< relref "pkg/nodejs/pulumi/pulumi#property-apply" >}}). For example, use the following to create an HTTPS URL from the DNS name of a virtual machine: 
 
 {{< langchoose >}}
 
@@ -362,7 +362,7 @@ def split(input):
 
 ##### Working with Outputs and strings {#ouputs-and-strings}
 
-It's very common to want to build a string out of the values contained in `Outputs`.  Common uses for this are to either provide a custom [stack output](#stack-outputs), or to provide a dynamically computed string as an [Input]({{< relref "pkg/nodejs/@pulumi/pulumi#Input" >}}) to another Resource.  For example, say you had the following:
+It's very common to want to build a string out of the values contained in `Outputs`.  Common uses for this are to either provide a custom [stack output](#stack-outputs), or to provide a dynamically computed string as an [Input]({{< relref "pkg/nodejs/pulumi/pulumi#Input" >}}) to another Resource.  For example, say you had the following:
 
 {{< langchoose >}}
 
@@ -1177,32 +1177,32 @@ For more details see the docs on [serializing functions]({{< relref "serializing
 
 ### OutputInstance.apply
 
-It is recommended that the `func` argument of [OutputInstance.apply]({{< relref "pkg/nodejs/@pulumi/pulumi#Output-apply" >}}) not create any resources, as doing so can lead to the results of `pulumi preview` being wrong, as the `apply` callback will not get run during a preview (because the real outputs values aren't yet known until the resources are deployed), and therefore any resources created in the callback will not be seen during the `preview`.  
+It is recommended that the `func` argument of [OutputInstance.apply]({{< relref "pkg/nodejs/pulumi/pulumi#Output-apply" >}}) not create any resources, as doing so can lead to the results of `pulumi preview` being wrong, as the `apply` callback will not get run during a preview (because the real outputs values aren't yet known until the resources are deployed), and therefore any resources created in the callback will not be seen during the `preview`.  
 
-However, you may have a scenario in which the actual value, such as an array of Outputs, is needed to create a resource but is not determined until the time of `pulumi uypdate` and after part of the deployment has already happened (e.g. an array of [Nameservers]({{< relref "pkg/nodejs/@pulumi/aws/route53#Zone-nameServers" >}})).  In that case, Pulumi lets you express this within the `apply`, but be cautioned that the preview may not include some changes to resources that are created (or later removed) from within the `apply`.
+However, you may have a scenario in which the actual value, such as an array of Outputs, is needed to create a resource but is not determined until the time of `pulumi update` and after part of the deployment has already happened (e.g. an array of [Nameservers]({{< relref "pkg/nodejs/pulumi/aws/route53#Zone-nameServers" >}})).  In that case, Pulumi lets you express this within the `apply`, but be cautioned that the preview may not include some changes to resources that are created (or later removed) from within the `apply`.
 
 <!-- MARKDOWN LINKS -->
-[pulumi.Resource]: {{< relref "pkg/nodejs/@pulumi/pulumi#Resource" >}}
-[pulumi.ComponentResource]: {{< relref "pkg/nodejs/@pulumi/pulumi#ComponentResource" >}}
-[pulumi.CustomResource]: {{< relref "pkg/nodejs/@pulumi/pulumi#CustomResource" >}}
-[pulumi.Output]: {{< relref "pkg/nodejs/@pulumi/pulumi#Output" >}}
-[pulumi.Input]: {{< relref "pkg/nodejs/@pulumi/pulumi#Input" >}}
-[@pulumi/pulumi]: {{< relref "pkg/nodejs/@pulumi/pulumi" >}}
-[@pulumi/aws]: {{< relref "pkg/nodejs/@pulumi/aws" >}}
-[@pulumi/kubernetes]: {{< relref "pkg/nodejs/@pulumi/kubernetes" >}}
-[@pulumi/cloud]: {{< relref "pkg/nodejs/@pulumi/cloud" >}}
-[@pulumi/awsx]: {{< relref "pkg/nodejs/@pulumi/awsx" >}}
+[pulumi.Resource]: {{< relref "pkg/nodejs/pulumi/pulumi#Resource" >}}
+[pulumi.ComponentResource]: {{< relref "pkg/nodejs/pulumi/pulumi#ComponentResource" >}}
+[pulumi.CustomResource]: {{< relref "pkg/nodejs/pulumi/pulumi#CustomResource" >}}
+[pulumi.Output]: {{< relref "pkg/nodejs/pulumi/pulumi#Output" >}}
+[pulumi.Input]: {{< relref "pkg/nodejs/pulumi/pulumi#Input" >}}
+[@pulumi/pulumi]: {{< relref "pkg/nodejs/pulumi/pulumi" >}}
+[@pulumi/aws]: {{< relref "pkg/nodejs/pulumi/aws" >}}
+[@pulumi/kubernetes]: {{< relref "pkg/nodejs/pulumi/kubernetes" >}}
+[@pulumi/cloud]: {{< relref "pkg/nodejs/pulumi/cloud" >}}
+[@pulumi/awsx]: {{< relref "pkg/nodejs/pulumi/awsx" >}}
 
-[pulumi.getStack]: {{< relref "pkg/nodejs/@pulumi/pulumi#getStack" >}}
-[pulumi.log]: {{< relref "pkg/nodejs/@pulumi/pulumi/log/" >}}
-[pulumi.runtime.serializeFunction]: {{< relref "pkg/nodejs/@pulumi/pulumi/runtime#serializeFunction" >}}
-[pulumi.output]: {{< relref "pkg/nodejs/@pulumi/pulumi#output" >}}
-[pulumi.all]: {{< relref "pkg/nodejs/@pulumi/pulumi#all" >}}
+[pulumi.getStack]: {{< relref "pkg/nodejs/pulumi/pulumi#getStack" >}}
+[pulumi.log]: {{< relref "pkg/nodejs/pulumi/pulumi/log/" >}}
+[pulumi.runtime.serializeFunction]: {{< relref "pkg/nodejs/pulumi/pulumi/runtime#serializeFunction" >}}
+[pulumi.output]: {{< relref "pkg/nodejs/pulumi/pulumi#output" >}}
+[pulumi.all]: {{< relref "pkg/nodejs/pulumi/pulumi#all" >}}
 
-[config.get]: {{< relref "pkg/nodejs/@pulumi/pulumi#method-get" >}}
-[config.require]: {{< relref "pkg/nodejs/@pulumi/pulumi#method-require" >}}
-[config.getNumber]: {{< relref "pkg/nodejs/@pulumi/pulumi#method-getnumber" >}}
-[config.getObject]: {{< relref "pkg/nodejs/@pulumi/pulumi#method-getobject" >}}
+[config.get]: {{< relref "pkg/nodejs/pulumi/pulumi#method-get" >}}
+[config.require]: {{< relref "pkg/nodejs/pulumi/pulumi#method-require" >}}
+[config.getNumber]: {{< relref "pkg/nodejs/pulumi/pulumi#method-getnumber" >}}
+[config.getObject]: {{< relref "pkg/nodejs/pulumi/pulumi#method-getobject" >}}
 
-[registerOutputs]: {{< relref "pkg/nodejs/@pulumi/pulumi#method-registeroutputs" >}}
+[registerOutputs]: {{< relref "pkg/nodejs/pulumi/pulumi#method-registeroutputs" >}}
 <!-- END LINKS -->
