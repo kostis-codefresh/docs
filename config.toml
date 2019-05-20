@@ -108,6 +108,7 @@ sectionPagesMenu = "main"
 
 [[menu.reference]]
     parent = "node"
+    identifier = "node-pulumi"
     name = "pulumi"
     url = "/reference/pkg/nodejs/pulumi/pulumi/"
     weight = 1
@@ -207,6 +208,7 @@ sectionPagesMenu = "main"
 
 [[menu.reference]]
     parent = "python"
+    identifier = "python-pulumi"
     name = "pulumi"
     url = "/reference/pkg/python/pulumi/"
     weight = 1
