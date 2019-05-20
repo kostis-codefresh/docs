@@ -2,16 +2,6 @@ function getElemClasses(e) {
     return ($(e).attr("class") || "").split(/\s+/);
 }
 
-function elementHasLanguageClass(e) {
-    var classes = getElemClasses(e);
-    for (var i = 0; i < classes.length; i++) {
-        if (classes[i].startsWith("language-")) {
-            return true;
-        }
-    }
-    return false;
-}
-
 // selectLanguage will remember a given language as a preferred setting using a cookie and walk the DOM enabling
 // all code tabs and snippets for this language, and disabling those for unselected languages.
 function selectLanguage(lang) {
