@@ -14,6 +14,7 @@ aws_here: "https://aws.amazon.com/athena/"
 menu:
   aws:
     parent: aws
+    name: Athena
 ---
 
 ## Create an AWS Athena resource using `@pulumi/aws`

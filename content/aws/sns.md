@@ -14,6 +14,7 @@ aws_here: "https://aws.amazon.com/sns/"
 menu:
   aws:
     parent: aws
+    name: SNS
 ---
 
 ## Create an AWS SNS resource using `@pulumi/aws`

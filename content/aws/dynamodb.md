@@ -14,6 +14,7 @@ aws_here: "https://aws.amazon.com/dynamodb/"
 menu:
   aws:
     parent: aws
+    name: DynamoDB
 ---
 
 ## Create an AWS DynamoDB resource using `@pulumi/aws`

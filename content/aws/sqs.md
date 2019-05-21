@@ -14,6 +14,7 @@ aws_here: "https://aws.amazon.com/sqs/"
 menu:
   aws:
     parent: aws
+    name: SQS
 ---
 
 ## Create an AWS SQS resource using `@pulumi/aws`

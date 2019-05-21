@@ -14,6 +14,7 @@ aws_here: "https://aws.amazon.com/kinesis/"
 menu:
   aws:
     parent: aws
+    name: Kinesis
 ---
 
 ## Create an AWS Kinesis resource using `@pulumi/aws`

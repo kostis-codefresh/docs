@@ -14,6 +14,7 @@ aws_here: "https://aws.amazon.com/iam/"
 menu:
   aws:
     parent: aws
+    name: IAM
 ---
 
 ## Create an AWS IAM resource using `@pulumi/aws`

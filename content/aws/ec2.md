@@ -14,6 +14,7 @@ aws_here: "https://aws.amazon.com/ec2/"
 menu:
   aws:
     parent: aws
+    name: EC2
 ---
 
 ## Create an AWS EC2 resource using `@pulumi/aws`

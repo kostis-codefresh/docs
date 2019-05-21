@@ -14,6 +14,7 @@ aws_here: "https://aws.amazon.com/ecr/"
 menu:
   aws:
     parent: aws
+    name: ECR
 ---
 
 ## Create an AWS ECR resource using `@pulumi/aws`

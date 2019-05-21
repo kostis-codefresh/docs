@@ -14,6 +14,7 @@ aws_here: "https://aws.amazon.com/cloudwatch/"
 menu:
   aws:
     parent: aws
+    name: CloudWatch
 ---
 
 ## Create an AWS CloudWatch resource using `@pulumi/aws`
