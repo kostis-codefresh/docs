@@ -204,7 +204,7 @@ or clicking the button below.
 
 Example comment when using the Pulumi GitHub App:
 
-![Comment from the Pulumi GitHub App](/images/github-actions/pr-comment-gh-app.png){:width="600px"}{:class="img-bordered"}
+<img src="/images/github-actions/pr-comment-gh-app.png" alt="Comment from the Pulumi GitHub App" width="600" class="img-bordered">
 
 ## Comments By GitHub Actions
 
@@ -232,7 +232,7 @@ action "Pulumi Preview (Merged Stack)" {
 
 Example comment when using GitHub Actions directly:
 
-![Comment from GitHub Actions](/images/github-actions/pr-comment-actions.png){:width="600px"}{:class="img-bordered"}
+<img src="/images/github-actions/pr-comment-actions.png" alt="Comment from GitHub Actions" width="600" class="img-bordered">
 
 # Configuration
 

@@ -171,7 +171,7 @@ In this section, we configure the S3 bucket to serve the files to a browser. To 
     s3-website-bucket-8533d8b.s3-website-us-west-2.amazonaws.com
     ```
 
-    ![Hello S3 example](/images/quickstart/s3-website.png){:width="700px"}
+    <img src="/images/quickstart/s3-website.png" alt="Hello S3 example" width="700">
 
 ## Clean up
 

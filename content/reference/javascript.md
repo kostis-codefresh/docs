@@ -107,7 +107,7 @@ information on additional settings, see the [TypeScript documentation for `tscon
 
 Tools like VS Code will give you completion lists, live error reporting and inline documentation help.
 
-![Pulumi TypeScript in VS Code](/images/reference/vscode.png){:width="700px"}
+<img src="/images/reference/vscode.png" alt="Pulumi TypeScript in VS Code" width="700">
 
 ## Disabling built in TypeScript support
 

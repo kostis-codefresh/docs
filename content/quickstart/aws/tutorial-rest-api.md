@@ -32,11 +32,11 @@ pulumi new hello-aws-javascript
 
 You can accept the defaults for this command. For instance, you can change the AWS region to `us-west-2`.
 
-![Run Pulumi new](/images/quickstart/hello/Quickstart1.png){:width="700px"}
+<img src="/images/quickstart/hello/Quickstart1.png" alt="Run Pulumi new" width="700">
 
 After some dependency installations from NPM, you'll see a few files have been generated from this initialization process. 
 
-![View files](/images/quickstart/hello/Quickstart2.png){:width="700px"}
+<img src="/images/quickstart/hello/Quickstart2.png" alt="View files" width="700">
 
 Let's look at some of those.
 
@@ -95,11 +95,11 @@ pulumi up
 
 This command instructs Pulumi to determine the resources needed to create the stack. First, a preview is shown of the changes that will be made:
 
-![Stack preview](https://user-images.githubusercontent.com/4564579/46554998-da6c9980-c896-11e8-8530-6ca4c8db8123.png){:width="700px"}
+<img src="https://user-images.githubusercontent.com/4564579/46554998-da6c9980-c896-11e8-8530-6ca4c8db8123.png" alt="Stack preview" width="700">
 
 Choosing `yes` will create resources in AWS. This may take a minute or two.
 
-![Stack update](https://user-images.githubusercontent.com/4564579/46555042-fcfeb280-c896-11e8-8731-51c9ee78af23.png){:width="700px"}
+<img src="https://user-images.githubusercontent.com/4564579/46555042-fcfeb280-c896-11e8-8731-51c9ee78af23.png" alt="Stack update" width="700">
 
 Since there was a stack export (via `exports.url` in the code), this is printed in the output of `pulumi up`. We can easily `curl` this URL via `pulumi stack output`:
 
@@ -109,13 +109,13 @@ curl $(pulumi stack output url)
 
 For a more interesting view that shows the result of calling a Lambda function, open the page in a browser:
 
-![Stack page in browser](/images/quickstart/hello/Quickstart5.png){:width="600px"}
+<img src="/images/quickstart/hello/Quickstart5.png" alt="Stack page in browser" width="600">
 
 ## Manage the stack
 
-Our output also contained a permalink to the Pulumi dashboard. We can review the stack in the UI, and examine logs and resource usage, along with inviting friends and co-workers to collaborate on stacks. 
+Our output also contained a permalink to the Pulumi dashboard. We can review the stack in the UI, and examine logs and resource usage, along with inviting friends and co-workers to collaborate on stacks.
 
-![](/images/quickstart/hello/Quickstart6.png){:width="600px"}
+<img src="/images/quickstart/hello/Quickstart6.png" width="600">
 
 ## Tear Down
 
