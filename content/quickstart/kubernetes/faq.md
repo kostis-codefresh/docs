@@ -1,5 +1,6 @@
 ---
 title: Kubernetes FAQ
+aliases: ["faq.html"]
 ---
 
 ## Does Pulumi work with my [kubeconfig file][kubeconfig]?

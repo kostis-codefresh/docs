@@ -1,5 +1,6 @@
 ---
 title: Pulumi GitHub App
+aliases: ["cd-github.html"]
 expanded_url: /reference/service/
 menu:
   reference:

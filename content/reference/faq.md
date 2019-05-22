@@ -1,5 +1,6 @@
 ---
 title: "FAQ"
+aliases: ["faq.html"]
 menu:
   reference:
     weight: 10

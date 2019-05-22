@@ -1,8 +1,9 @@
 ---
 title: "Node.js"
 aliases:
-    - "npm-packages.html"
-    - "install/configure-npm.html"
+    - javascript.html
+    - npm-packages.html
+    - /install/configure-npm.html
 
 expanded_url: /reference/languages/
 menu:

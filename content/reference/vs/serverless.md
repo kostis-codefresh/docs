@@ -1,5 +1,6 @@
 ---
 title: Pulumi vs. Serverless Framework
+aliases: ["serverless.html"]
 menu:
   reference:
     parent: vs

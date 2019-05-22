@@ -1,5 +1,6 @@
 ---
 title: Bootstrapping Identity
+aliases: ["identity.html"]
 ---
 
 Begin by cloning the [Kubernetes the Prod Way repository][ktpw]. The `identity` stack is implemented

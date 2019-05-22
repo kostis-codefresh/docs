@@ -1,6 +1,8 @@
 ---
 title: Pulumi vs. Terraform
-aliases: ["/reference/terraform.html"]
+aliases:
+    - terraform.html
+    - /reference/terraform.html
 menu:
   reference:
     parent: vs

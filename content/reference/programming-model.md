@@ -1,5 +1,6 @@
 ---
 title: "Programming Model"
+aliases: ["programming-model.html"]
 expanded_url: /reference/concepts/
 menu:
   reference:

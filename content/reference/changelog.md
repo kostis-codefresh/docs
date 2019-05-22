@@ -1,6 +1,8 @@
 ---
 title: "Changelog"
-aliases: ["/install/changelog.html"]
+aliases:
+    - changelog.html
+    - /install/changelog.html
 menu:
   reference:
     weight: 11

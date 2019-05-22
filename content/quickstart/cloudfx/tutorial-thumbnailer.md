@@ -1,6 +1,8 @@
 ---
 title: "Tutorial: Multi-Cloud Containers and Serverless"
-aliases: ["/quickstart/aws-extract-thumbnail.html"]
+aliases:
+    - tutorial-thumbnailer.html
+    - /quickstart/aws-extract-thumbnail.html
 menu:
   quickstart:
     parent: cloud

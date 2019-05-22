@@ -1,6 +1,8 @@
 ---
 title: Setup
-aliases: ["/install/aws.html"]
+aliases:
+    - setup.html
+    - /install/aws.html
 menu:
   quickstart:
     identifier: aws-setup

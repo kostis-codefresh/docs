@@ -1,6 +1,8 @@
 ---
 title: Setup
-aliases: ["/install/kubernetes.html"]
+aliases:
+    - setup.html
+    - /install/kubernetes.html
 menu:
   quickstart:
     identifier: kubernetes-setup

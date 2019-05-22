@@ -1,5 +1,6 @@
 ---
 title: "Python"
+aliases: ["python.html"]
 expanded_url: /reference/languages/
 menu:
   reference:

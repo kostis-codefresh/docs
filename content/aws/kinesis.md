@@ -4,8 +4,7 @@ og:
     description: "Use Pulumi to code, deploy, and manage cloud, serverless, and container apps and infrastructure"
     image: "/images/service/aws-kinesis.png"
 
-aliases:
-    - /aws/kinesis.html
+aliases: ["kinesis.html"]
 
 service: "Kinesis"
 description: "makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information"

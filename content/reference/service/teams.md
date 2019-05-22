@@ -1,6 +1,8 @@
 ---
 title: Teams
-aliases: ["/reference/service/collaboration.html"]
+aliases:
+    - teams.html
+    - /reference/service/collaboration.html
 menu:
   reference:
     parent: teams

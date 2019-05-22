@@ -1,5 +1,6 @@
 ---
 title: GitLab CI
+aliases: ["cd-gitlab-ci.html"]
 expanded_url: /reference/cd/
 menu:
   reference:

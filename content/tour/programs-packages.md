@@ -1,5 +1,6 @@
 ---
 title: Packages
+aliases: ["programs-packages.html"]
 expanded_url: /tour/programs/
 menu:
   tour:

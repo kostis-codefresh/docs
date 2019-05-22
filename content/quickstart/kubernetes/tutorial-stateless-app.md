@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Run a Stateless App Deployment"
+aliases: ["tutorial-stateless-app.html"]
 menu:
   quickstart:
     parent: kubernetes

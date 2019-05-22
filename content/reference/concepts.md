@@ -1,5 +1,6 @@
 ---
 title: Architecture & Concepts
+aliases: ["concepts.html"]
 menu:
   reference:
     identifier: concepts

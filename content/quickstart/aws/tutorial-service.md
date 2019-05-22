@@ -1,8 +1,9 @@
 ---
 title: "Tutorial: Containers"
 aliases:
-  - /quickstart/aws-containers.html
-  - /quickstart/aws/tutorial-containers-ecs-fargate.html
+    - tutorial-service.html
+    - /quickstart/aws-containers.html
+    - /quickstart/aws/tutorial-containers-ecs-fargate.html
 menu:
   quickstart:
     parent: aws

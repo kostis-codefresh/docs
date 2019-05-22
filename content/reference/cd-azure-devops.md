@@ -1,5 +1,6 @@
 ---
 title: Azure DevOps
+aliases: ["cd-azure-devops.html"]
 expanded_url: /reference/cd/
 menu:
   reference:

@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+aliases: ["project.html"]
 expanded_url: /reference/concepts/
 menu:
   reference:

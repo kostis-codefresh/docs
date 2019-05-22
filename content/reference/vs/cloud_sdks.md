@@ -1,5 +1,6 @@
 ---
 title: Pulumi vs. Cloud SDKs (AWS Boto, etc.)
+aliases: ["cloud_sdks.html"]
 menu:
   reference:
     parent: vs

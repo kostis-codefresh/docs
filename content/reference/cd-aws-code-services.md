@@ -1,5 +1,6 @@
 ---
 title: AWS Code Services
+aliases: ["cd-aws-code-services.html"]
 expanded_url: /reference/cd/
 menu:
   reference:

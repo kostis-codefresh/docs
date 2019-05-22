@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Graceful App Rollout"
+aliases: ["tutorial-configmap-rollout.html"]
 menu:
   quickstart:
     parent: kubernetes

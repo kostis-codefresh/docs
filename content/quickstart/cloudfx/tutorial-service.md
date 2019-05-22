@@ -1,7 +1,8 @@
 ---
 title: "Tutorial: Containers"
 aliases:
-  - /quickstart/aws-containers.html
+    - tutorial-service.html
+    - /quickstart/aws-containers.html
 menu:
   quickstart:
     identifier: cloud-containers

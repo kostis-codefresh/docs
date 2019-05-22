@@ -2,8 +2,8 @@
 title: "Download and Install"
 installer_version: "0.17.12"
 aliases:
-    - "/install/index.html"
-    - "/quickstart/install.html"
+    - install.html
+    - /install/
 menu:
   quickstart:
     weight: 2

@@ -1,5 +1,6 @@
 ---
 title: Creating a 'Deploy with Pulumi' Button
+aliases: ["pulumi-button.html"]
 menu:
   reference:
     parent: teams

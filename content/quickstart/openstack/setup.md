@@ -1,6 +1,8 @@
 ---
 title: Setup
-aliases: ["/install/openstack.html"]
+aliases:
+    - setup.html
+    - /install/openstack.html
 menu:
   quickstart:
     identifier: openstack-setup

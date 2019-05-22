@@ -1,5 +1,6 @@
 ---
 title: Travis CI
+aliases: ["cd-travis.html"]
 expanded_url: /reference/cd/
 menu:
   reference:

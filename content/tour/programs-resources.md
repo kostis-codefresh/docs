@@ -1,5 +1,6 @@
 ---
 title: Resources
+aliases: ["programs-resources.html"]
 expanded_url: /tour/programs/
 menu:
   tour:

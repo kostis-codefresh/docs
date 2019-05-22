@@ -1,6 +1,7 @@
 ---
 title: "Tutorial: EC2 Linux WebServer Instance"
 aliases:
+  - tutorial-ec2-webserver.html
   - /quickstart/part1.html
   - /quickstart/aws-ec2.html
 menu:

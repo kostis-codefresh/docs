@@ -1,6 +1,8 @@
 ---
 title: "Tutorial: EKS - Hello World!"
-aliases: ["/quickstart/eks-hello-world.html"]
+aliases:
+    - tutorial-eks.html
+    - /quickstart/eks-hello-world.html
 menu:
   quickstart:
     parent: aws

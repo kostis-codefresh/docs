@@ -4,8 +4,7 @@ og:
     description: "Use Pulumi to code, deploy, and manage cloud, serverless, and container apps and infrastructure"
     image: "/images/service/aws-iam.png"
 
-aliases:
-    - /aws/iam.html
+aliases: ["iam.html"]
 
 service: "IAM"
 description: "enables you to manage access to AWS services and resources securely"

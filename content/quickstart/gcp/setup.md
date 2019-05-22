@@ -1,6 +1,8 @@
 ---
 title: Setup
-aliases: ["/install/gcp.html"]
+aliases:
+    - setup.html
+    - /install/gcp.html
 menu:
   quickstart:
     identifier: gcp-setup

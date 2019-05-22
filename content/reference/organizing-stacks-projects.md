@@ -1,5 +1,6 @@
 ---
 title: Organizing Projects and Stacks
+aliases: ["organizing-stacks-projects.html"]
 expanded_url: /reference/concepts/
 menu:
   reference:

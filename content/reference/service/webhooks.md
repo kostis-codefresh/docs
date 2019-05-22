@@ -1,5 +1,6 @@
 ---
 title: Pulumi Webhooks
+aliases: ["webhooks.html"]
 menu:
   reference:
     parent: teams

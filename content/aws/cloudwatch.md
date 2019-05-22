@@ -4,8 +4,7 @@ og:
     description: "Use Pulumi to code, deploy, and manage cloud, serverless, and container apps and infrastructure"
     image: "/images/service/aws-cloudwatch.png"
 
-aliases:
-    - /aws/cloudwatch.html
+aliases: ["cloudwatch.html"]
 
 service: "CloudWatch"
 description: "is a monitoring service for AWS cloud resources and the applications you run on Amazon Web Services."

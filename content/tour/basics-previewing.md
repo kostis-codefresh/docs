@@ -1,5 +1,6 @@
 ---
 title: Previewing
+aliases: ["basics-previewing.html"]
 menu:
   tour:
     parent: tour

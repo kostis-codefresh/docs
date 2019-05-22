@@ -1,6 +1,8 @@
 ---
 title: Supported Clouds
-aliases: ["/quickstart/clouds.html"]
+aliases:
+    - clouds.html
+    - /quickstart/clouds.html
 menu:
   reference:
     identifier: clouds

@@ -1,5 +1,6 @@
 ---
 title: CircleCI
+aliases: ["cd-circleci.html"]
 expanded_url: /reference/cd/
 menu:
   reference:

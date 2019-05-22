@@ -1,6 +1,8 @@
 ---
 title: "Tutorial: Serverless REST APIs using Lambda"
-aliases: ["/quickstart/aws-hello-world.html"]
+aliases:
+    - tutorial-rest-api.html
+    - /quickstart/aws-hello-world.html
 menu:
   quickstart:
     parent: aws

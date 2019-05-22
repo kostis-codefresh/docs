@@ -1,5 +1,6 @@
 ---
 title: Supported Languages
+aliases: ["languages.html"]
 menu:
   reference:
     identifier: languages

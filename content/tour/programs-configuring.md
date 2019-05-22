@@ -1,5 +1,6 @@
 ---
 title: Configuring your stack
+aliases: ["programs-configuring.html"]
 expanded_url: /tour/programs/
 menu:
   tour:

@@ -1,5 +1,6 @@
 ---
 title: "Configuration and Secrets"
+aliases: ["config.html"]
 expanded_url: /reference/concepts/
 menu:
   reference:

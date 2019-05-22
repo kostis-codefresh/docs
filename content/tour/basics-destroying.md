@@ -1,5 +1,6 @@
 ---
 title: Destroying
+aliases: ["basics-destroying.html"]
 menu:
   tour:
     parent: tour

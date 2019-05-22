@@ -1,5 +1,6 @@
 ---
 title: Prerequisites
+aliases: ["prerequisites.html"]
 ---
 
 This tutorial leverages [Pulumi][pulumi] and [Node.js][nodejs] to provision and configure

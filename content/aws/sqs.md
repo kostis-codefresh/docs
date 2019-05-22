@@ -4,8 +4,7 @@ og:
     description: "Use Pulumi to code, deploy, and manage cloud, serverless, and container apps and infrastructure"
     image: "/images/service/aws-sqs.png"
 
-aliases:
-    - /aws/sqs.html
+aliases: ["sqs.html"]
 
 service: "SQS"
 description: "is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications"

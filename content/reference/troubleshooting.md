@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting & Support
+aliases: ["troubleshooting.html"]
 menu:
   reference:
     weight: 12

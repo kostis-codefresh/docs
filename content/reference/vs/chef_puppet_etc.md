@@ -1,5 +1,6 @@
 ---
 title: Pulumi vs. Chef, Puppet, etc.
+aliases: ["chef_puppet_etc.html"]
 menu:
   reference:
     parent: vs

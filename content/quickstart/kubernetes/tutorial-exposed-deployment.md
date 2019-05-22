@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Hello, World!"
+aliases: ["tutorial-exposed-deployment.html"]
 menu:
   quickstart:
     parent: kubernetes

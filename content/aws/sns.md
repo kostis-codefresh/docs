@@ -4,8 +4,7 @@ og:
     description: "Use Pulumi to code, deploy, and manage cloud, serverless, and container apps and infrastructure"
     image: "/images/service/aws-sns.png"
 
-aliases:
-    - /aws/sns.html
+aliases: ["sns.html"]
 
 service: "SNS"
 description: "is a flexible, fully managed pub/sub messaging and mobile notifications service for coordinating the delivery of messages to subscribing endpoints and clients"

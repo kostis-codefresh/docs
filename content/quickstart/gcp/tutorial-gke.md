@@ -1,6 +1,8 @@
 ---
 title: "Tutorial: GKE - Hello World!"
-aliases: ["/quickstart/gke-hello-world.html"]
+aliases:
+    - tutorial-gke.html
+    - /quickstart/gke-hello-world.html
 menu:
   quickstart:
     parent: gcp

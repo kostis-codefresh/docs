@@ -1,6 +1,8 @@
 ---
 title: "Tutorial: AWS Containers and Serverless"
-aliases: ["/quickstart/aws-extract-thumbnail.html"]
+aliases:
+    - tutorial-thumbnailer.html
+    - /quickstart/aws-extract-thumbnail.html
 menu:
   quickstart:
     parent: aws

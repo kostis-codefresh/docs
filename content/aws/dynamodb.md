@@ -4,8 +4,7 @@ og:
     description: "Use Pulumi to code, deploy, and manage cloud, serverless, and container apps and infrastructure"
     image: "/images/service/aws-dynamodb.png"
 
-aliases:
-    - /aws/dynamodb.html
+aliases: ["dynamodb.html"]
 
 service: "DynamoDB"
 description: "is a fast and flexible nonrelational database service for all applications that need consistent, single-digit millisecond latency at any scale"

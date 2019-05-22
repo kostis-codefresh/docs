@@ -1,6 +1,8 @@
 ---
 title: Setup
-aliases: ["/install/azure.html"]
+aliases:
+  - setup.html
+  - /install/azure.html
 menu:
   quickstart:
     identifier: azure-setup

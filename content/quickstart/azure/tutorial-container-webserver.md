@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Web Server Container Instance"
+aliases: ["tutorial-container-webserver.html"]
 menu:
   quickstart:
     parent: azure

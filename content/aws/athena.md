@@ -4,8 +4,7 @@ og:
     description: "Use Pulumi to code, deploy, and manage cloud, serverless, and container apps and infrastructure"
     image: "/images/service/aws-athena.png"
 
-aliases:
-    - /aws/athena.html
+aliases: ["athena.html"]
 
 service: "Athena"
 description: "is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL"

@@ -1,5 +1,6 @@
 ---
 title: "How Pulumi Works"
+aliases: ["how.html"]
 expanded_url: /reference/concepts/
 menu:
   reference:

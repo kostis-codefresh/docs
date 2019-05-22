@@ -1,6 +1,8 @@
 ---
 title: "Tutorial: Serverless REST APIs with DynamoDB"
-aliases: ["/quickstart/aws-rest-api.html"]
+aliases:
+    - tutorial-rest-api.html
+    - /quickstart/aws-rest-api.html
 menu:
   quickstart:
     parent: cloud

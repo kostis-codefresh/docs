@@ -1,6 +1,8 @@
 ---
 title: Organizations
-aliases: ["/reference/service/editions.html"]
+aliases:
+    - orgs.html
+    - /reference/service/editions.html
 menu:
   reference:
     parent: teams

@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Azure Kubernetes Service"
+aliases: ["tutorial-azure-kubernetes-service.html"]
 menu:
   quickstart:
     parent: azure
