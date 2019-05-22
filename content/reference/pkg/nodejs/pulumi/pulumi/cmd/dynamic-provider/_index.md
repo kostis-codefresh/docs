@@ -20,32 +20,19 @@ aliases:
 <li><a href="#main">function main</a></li>
 </ul>
 
-<a href="https://github.com/pulumi/pulumi/blob/f6c25b7d2dd881ef892ce03b5cf1ca579b8c71e4/sdk/nodejs/cmd/dynamic-provider/index.ts">cmd/dynamic-provider/index.ts</a> 
+<a href="https://github.com/pulumi/pulumi/blob/2cd4409c0d733d330820a5a4810e99a388ecdac7/sdk/nodejs/cmd/dynamic-provider/index.ts">cmd/dynamic-provider/index.ts</a> 
 </div>
 </div>
 </div>
 
 
 <h2 class="pdoc-module-header" id="main">
-<a class="pdoc-member-name" href="https://github.com/pulumi/pulumi/blob/f6c25b7d2dd881ef892ce03b5cf1ca579b8c71e4/sdk/nodejs/cmd/dynamic-provider/index.ts#L298">function <b>main</b></a>
+<a class="pdoc-member-name" href="https://github.com/pulumi/pulumi/blob/2cd4409c0d733d330820a5a4810e99a388ecdac7/sdk/nodejs/cmd/dynamic-provider/index.ts#L298">function <b>main</b></a>
 </h2>
 <div class="pdoc-module-contents">
 {{% md %}}
 
-<pre class="highlight">{{{Label}}}</pre>
+<pre class="highlight"><span class='kd'></span>main(args: <span class='kd'><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String'>string</a></span>[]): <span class='kd'><a href='https://www.typescriptlang.org/docs/handbook/basic-types.html#void'>void</a></span></pre>
 
-{{#Comment.ShortText}}
-
-{{{Comment.ShortText}}}
-
-{{#Comment.Text}}
-{{{Comment.Text}}}
-{{/Comment.Text}}
-{{/Comment.ShortText}}
-{{#Parameters}}
-{{#Comment.ShortText}}
-* `{{Name}}` {{Comment.ShortText}}
-{{/Comment.ShortText}}
-{{/Parameters}}
 {{% /md %}}
 </div>

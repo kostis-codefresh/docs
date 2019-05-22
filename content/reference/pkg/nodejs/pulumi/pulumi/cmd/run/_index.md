@@ -21,38 +21,25 @@ aliases:
 <li><a href="#run">function run</a></li>
 </ul>
 
-<a href="https://github.com/pulumi/pulumi/blob/f6c25b7d2dd881ef892ce03b5cf1ca579b8c71e4/sdk/nodejs/cmd/run/index.ts">cmd/run/index.ts</a> <a href="https://github.com/pulumi/pulumi/blob/f6c25b7d2dd881ef892ce03b5cf1ca579b8c71e4/sdk/nodejs/cmd/run/run.ts">cmd/run/run.ts</a> 
+<a href="https://github.com/pulumi/pulumi/blob/2cd4409c0d733d330820a5a4810e99a388ecdac7/sdk/nodejs/cmd/run/index.ts">cmd/run/index.ts</a> <a href="https://github.com/pulumi/pulumi/blob/2cd4409c0d733d330820a5a4810e99a388ecdac7/sdk/nodejs/cmd/run/run.ts">cmd/run/run.ts</a> 
 </div>
 </div>
 </div>
 
 
 <h2 class="pdoc-module-header" id="nodeJSProcessExitedAfterLoggingUserActionableMessage">
-<a class="pdoc-member-name" href="https://github.com/pulumi/pulumi/blob/f6c25b7d2dd881ef892ce03b5cf1ca579b8c71e4/sdk/nodejs/cmd/run/index.ts#L47">const <b>nodeJSProcessExitedAfterLoggingUserActionableMessage</b></a>
+<a class="pdoc-member-name" href="https://github.com/pulumi/pulumi/blob/2cd4409c0d733d330820a5a4810e99a388ecdac7/sdk/nodejs/cmd/run/index.ts#L47">const <b>nodeJSProcessExitedAfterLoggingUserActionableMessage</b></a>
 </h2>
 <div class="pdoc-module-contents">
 <pre class="highlight"><span class='kd'>const</span> nodeJSProcessExitedAfterLoggingUserActionableMessage: 32 = <span class='s2'>32</span>;</pre>
 </div>
 <h2 class="pdoc-module-header" id="run">
-<a class="pdoc-member-name" href="https://github.com/pulumi/pulumi/blob/f6c25b7d2dd881ef892ce03b5cf1ca579b8c71e4/sdk/nodejs/cmd/run/run.ts#L134">function <b>run</b></a>
+<a class="pdoc-member-name" href="https://github.com/pulumi/pulumi/blob/2cd4409c0d733d330820a5a4810e99a388ecdac7/sdk/nodejs/cmd/run/run.ts#L134">function <b>run</b></a>
 </h2>
 <div class="pdoc-module-contents">
 {{% md %}}
 
-<pre class="highlight">{{{Label}}}</pre>
+<pre class="highlight"><span class='kd'></span>run(argv: ParsedArgs, programStarted: () => <span class='kd'><a href='https://www.typescriptlang.org/docs/handbook/basic-types.html#void'>void</a></span>, reportLoggedError: (err: <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error'>Error</a>) => <span class='kd'><a href='https://www.typescriptlang.org/docs/handbook/basic-types.html#void'>void</a></span>): <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise'>Promise</a>&lt;<span class='kd'><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined'>undefined</a></span> | { ... }&gt;</pre>
 
-{{#Comment.ShortText}}
-
-{{{Comment.ShortText}}}
-
-{{#Comment.Text}}
-{{{Comment.Text}}}
-{{/Comment.Text}}
-{{/Comment.ShortText}}
-{{#Parameters}}
-{{#Comment.ShortText}}
-* `{{Name}}` {{Comment.ShortText}}
-{{/Comment.ShortText}}
-{{/Parameters}}
 {{% /md %}}
 </div>

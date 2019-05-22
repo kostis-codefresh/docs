@@ -34,7 +34,7 @@ aliases:
 <div class="pdoc-module-contents">
 {{% md %}}
 
-<pre class="highlight"><span class='kd'></span>getRule(args: <a href='#GetRuleArgs'>GetRuleArgs</a>, opts?: <a href='https://pulumi.io/reference/pkg/nodejs/@pulumi/pulumi/#InvokeOptions'>pulumi.InvokeOptions</a>): <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise'>Promise</a>&lt;<a href='#GetRuleResult'>GetRuleResult</a>&gt;</pre>
+<pre class="highlight"><span class='kd'></span>getRule(args: <a href='#GetRuleArgs'>GetRuleArgs</a>, opts?: <a href='/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions'>pulumi.InvokeOptions</a>): <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise'>Promise</a>&lt;<a href='#GetRuleResult'>GetRuleResult</a>&gt;</pre>
 
 
 Use this data source to get information about a Google IAM Role.
