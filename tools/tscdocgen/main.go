@@ -984,17 +984,17 @@ func typeHyperlink(t *typeDocType) string {
 			case "Archive", "Asset", "AssetMap", "AssetArchive",
 				"FileArchive", "FileAsset", "RemoteArchive", "RemoteAsset", "StringAsset":
 				return fmt.Sprintf(
-					"https://pulumi.io/reference/pkg/nodejs/@pulumi/pulumi/asset/#%s", t.Name)
+					"/reference/pkg/nodejs/pulumi/pulumi/asset/#%s", t.Name)
 			case "ComponentResource", "ComponentResourceOptions", "CustomResource", "CustomResourceOptions",
 				"ID", "Input", "Inputs", "InvokeOptions", "Output", "Outputs", "Resource", "ResourceOptions", "URN":
 				return fmt.Sprintf(
-					"https://pulumi.io/reference/pkg/nodejs/@pulumi/pulumi/#%s", t.Name)
+					"/reference/pkg/nodejs/pulumi/pulumi/#%s", t.Name)
 			}
 
 			// If this is a qualified name, see if it refers to the Pulumi SDK. If so, generate a link.
 			elements := strings.Split(t.Name, ".")
 			if len(elements) > 1 && elements[0] == "pulumi" {
-				link := "https://pulumi.io/reference/pkg/nodejs/@pulumi/pulumi/"
+				link := "/reference/pkg/nodejs/pulumi/pulumi/"
 				for i := 1; i < len(elements)-1; i++ {
 					link += fmt.Sprintf("%s/", elements[i])
 				}
